@@ -1,0 +1,12 @@
+01-overview.md=Overview of Self-Managed Portals
+02-amazon.md=VM Install : Amazon
+03-azure.md=VM Install : Azure
+04-digital-ocean.md=VM Install : Digital Ocean
+05-google.md=VM Install : Google
+06-linode.md=VM Install : Linode
+07-kubernetes.md=Installing on Kubernetes
+08-k8s-amazon.md=Kubernetes : Amazon
+09-k8s-azure.md=Kubernetes : Azure
+10-k8s-digital-ocean.md=Kubernetes : Digital Ocean
+11-k8s-google.md=Kubernetes : Google
+12-k8s-linode.md=Kubernetes : Linode

@@ -1,0 +1,5 @@
+01-intro.md=Types of Repositories and Formats
+02-public-repos.md=Connecting to Public Repositories
+03-private-repos.md=Connecting to Private Repositories
+04-repo-macros.md=Git Repo URL Pattern Macros
+05-view-macros.md=Git View URL Pattern Macros 

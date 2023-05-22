@@ -1,0 +1,9 @@
+01-create-vm.md=Creating a VM on Azure
+02-ssh.md=Enabling SSH Access to VM
+03-create-disk.md=Creating a Virtual Disk
+04-format-disk.md=Attaching & Formatting the Disk
+05-mongodb.md=Installing MongoDB
+06-elastic.md=Installing ElasticSearch
+07-dotnet.md=Installing .NET 6.0 Runtime
+08-download.md=Downloading the Application Files
+09-nginx.md=Setting Up Nginx

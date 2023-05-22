@@ -1,0 +1,4 @@
+01-overview.md=Linode Installation Options
+02-vm-quick=Virtual Machine Setup - Quick Version
+03-vm-detailed=Virtual Machine Setup - Detailed Version
+04-kubernetes=Installing on Linode Kubernetes Engine
