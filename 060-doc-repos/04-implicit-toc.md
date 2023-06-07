@@ -1,8 +1,12 @@
 ---
+weight: 40
 Order: 4
 Title: Implicit Table of Contents
+description: >
+  This section discusses how OpenSquiggly can create a table of contents implicitly
+  using the names of files and prefixed number sequences to control ordering.
 ---
-# Introduction
+## Introduction
 
 There are two ways to set up your documentation to let OpenSquiggly managed your
 table of contents navigation for you: implicitly or explicitly. In this chapter
@@ -15,7 +19,7 @@ file to each folder in your documents folder structure.
 With implicit table of contents, OpenSquiggly builds the table of contents and determines
 the order of files in the table of contents by using the names of the files in the folder.
 
-# How File Names are Transformed into Table of Contents Entries
+## How File Names are Transformed into Table of Contents Entries
 
 File and folder names are transformed into their final display names in the table of
 contents as follows:
@@ -49,7 +53,7 @@ contents as follows:
 * Numerical prefixes separated with dashes are removed (they are used for file ordering - see below)
 * The ending file extension is removed
 
-# Ordering of Table of Contents Entries
+## Ordering of Table of Contents Entries
 
 With implicit table of contents, the table of contents are ordered as follows:
 
@@ -57,7 +61,7 @@ With implicit table of contents, the table of contents are ordered as follows:
   and the numerical prefix is removed before rendering
 * Files are displayed next, ordered in the same manner as folders
 
-# Numerical Prefixes Used for Ordering
+## Numerical Prefixes Used for Ordering
 
 A numerical file prefix can be applied to the folder or filename, of the form:
 
@@ -138,9 +142,9 @@ is equivalent to:
 
 Items with the same numerical prefix are sorted alphabetically relative to each other.
 
-# Example
+## Example
 
-## The /docs folder contains
+### The /docs folder contains
 ```
 (folder) 1-Overview
 (folder) 2-Reference
@@ -149,12 +153,12 @@ Items with the same numerical prefix are sorted alphabetically relative to each 
 (file)   index.md
 ```
 
-## /docs/index.md contains
+### /docs/index.md contains
 ```
 Here is some system documentation.
 ```
 
-## The /docs/1-Overview folder contains
+### The /docs/1-Overview folder contains
 ```
 (file) 1-History.md
 (file) 2-Concepts.md
@@ -162,24 +166,24 @@ Here is some system documentation.
 (file) index.md
 ```
 
-## /docs/1-Overview/index.md contains
+### /docs/1-Overview/index.md contains
 ```
 Here is some overview documentation.
 ```
 
-## The /docs/2-Reference folder contains
+### The /docs/2-Reference folder contains
 ```
 (file) 1-Database_Schema.md
 (file) 2-Folder_Layout.md
 (file) index.md
 ```
 
-## The /docs/2-Reference/index.md contains
+### The /docs/2-Reference/index.md contains
 ```
 Here is some reference documentation
 ```
 
-## The /docs/3-Proposals folder contains
+### The /docs/3-Proposals folder contains
 ```
 (file) 1-External_Content.md
 (file) 2-Mapped_Pages.md
@@ -187,12 +191,12 @@ Here is some reference documentation
 (file) index.md
 ```
 
-## The /docs/3-Proposals/index.md contains
+### The /docs/3-Proposals/index.md contains
 ```
 Here are specifications for work proposals.
 ```
 
-# The /docs/images folder contains
+## The /docs/images folder contains
 ```
 AddMappedPageMockup.jpg
 AzureDevOpsMockup.jpg

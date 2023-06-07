@@ -1,6 +1,9 @@
 ---
+weight: 20
 Title: Use Cases
 Order: 2
+description: >
+  Some common use cases for why developer portals and documentation are useful for teams.
 ---
 Here are some ideas for how you might use OpenSquiggly to improve your overall team productivity:
 

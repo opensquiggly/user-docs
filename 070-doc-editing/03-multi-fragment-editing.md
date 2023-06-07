@@ -1,8 +1,10 @@
 ---
+weight: 30
 Order: 3
 Title: Multi-Fragment Documents
+description: Describes how content within OpenSquiggly pages are broken into smaller fragments.
 ---
-# Editing Document Fragments
+## Editing Document Fragments
 
 One big difference that you may notice right away in OpenSquiggly vs. other similar types
 of software you may be familiar with is that the documents are multi-fragmented. That is,
@@ -34,7 +36,7 @@ These are some of the reasons you might want to use multiple snippets on a page.
 reasons apply to your content, then it simply becomes a matter of preference as to whether you
 want to use one big snippet or lots of small snippets on the page.
 
-# Rich Text vs. Plain Text Editing
+## Rich Text vs. Plain Text Editing
 
 Another area where OpenSquiggly differs from other systems you may have used in the past is
 that OpenSquiggly uses a plain text editor rather than a rich text editor for editing content.

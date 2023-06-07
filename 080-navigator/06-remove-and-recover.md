@@ -1,8 +1,10 @@
 ---
+weight: 60
 Order: 6
 Title: Removing & Recovering Pages
+description: How to remove pages and recover pages after they've been removed.
 ---
-# Removing Documents
+## Removing Documents
 
 Your document tree is a hierarchically arranged set of references to pages. When you
 remove a page from the document tree, it merely removes a reference to the page. The
@@ -20,7 +22,7 @@ is a child of a mapped or virtual pages.
 You'll be asked to confirm the operation before the page is removed. Click "Remove" to
 confirm the operation or "Cancel" to abort and return to the normal navigator state.
 
-# Recovering Documents by Moving or Copying Them
+## Recovering Documents by Moving or Copying Them
 
 If you removed a document, but at least one reference to that document still exists in
 your document tree, you can recover the document at the desired location by moving or
@@ -28,7 +30,7 @@ copying it from one of the references that still exist.
 
 See the section "Moving or Copying Pages" for details on these operations.
 
-# Recovering Documents by Searching For Them
+## Recovering Documents by Searching For Them
 
 Another way of recovering a document and adding it back into your tree is by searching
 for it, and then dragging it from the search result list and dropping it onto the tree
@@ -38,7 +40,7 @@ See the chapter "Searching for Documents" for more details on how to perform sea
 
 When you find the desired document drag it from the search result list into your tree.
 
-# Recovering Unreferenced Documents
+## Recovering Unreferenced Documents
 
 If all references to a document have been removed from the tree, then it is referred
 to as an "unreferenced" document.

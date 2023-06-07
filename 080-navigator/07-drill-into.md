@@ -1,9 +1,10 @@
 ---
+weight: 70
 Order: 7
 Title: Drilling Into Pages
+description: For a more focused view of a subset of pages, this section describes how you can drill into pages.
 ---
-
-# Drilling In
+## Drilling In
 At times you may wish to focus on one section of your document tree, while ignoring
 all other documents. This can be particularly helpful if you are focusing on a task,
 bug, or user story, and only want to see documents and files that are relevant to the
@@ -21,7 +22,7 @@ Another advantage of the drill into feature is that it can help limit the depth 
 of your document hierararchy. Sometimes it can be tedious to navigate into a deeply
 nested tree.
 
-# Going Back
+## Going Back
 To go back the previous page, click the Back icon immediately to the left of the page name
 in the navigator header.
 

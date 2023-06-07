@@ -1,8 +1,12 @@
 ---
 Order: 2
+weight: 20
 Title: Creating Organizations
+description: >
+  How to create organizations. An organization is a segmented community of users
+  within an OpenSquiggly instance. 
 ---
-# Overview of Organizations
+## Overview of Organizations
 
 An "organization" is a special type of user within a given OpenSquiggly instance.
 
@@ -13,7 +17,7 @@ of the organization while logged in as their own account with their own login id
 In effect, they act on behalf of the organization, but never log in directly as
 the organization.
 
-# Creating a New Organization
+## Creating a New Organization
 
 While logged in as your own user account, click on the user name icon located in
 the right hand side of the top OpenSquiggly header bar. This will open up the
@@ -41,7 +45,7 @@ Press the Save button to create the organization.
 Next, you'll want to add existing OpenSquiggly users as members of the organization. These
 operations are discussed in the next section, "Managing Organization Members".
 
-# Deleting Organizations
+## Deleting Organizations
 
 To delete an organization, click the "Delete" button in the row corresponding to the
 organization you wish to delete.

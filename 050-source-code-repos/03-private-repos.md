@@ -1,8 +1,10 @@
 ---
+weight: 30
 Order: 3
 Title: Mounting Private Repos
+description: How to connect to private Git repositories.
 ---
-# Overview of Private Repositories
+## Overview of Private Repositories
 
 Private repositories are repositories that require some type of authentication
 credentials in order to clone.
@@ -13,7 +15,7 @@ an "External Connection" that stores the credentials (which can be either
 a personal access token or an OAuth token), and then we specify the desired
 external connection when we create the mount point.
 
-# Creating an External Connection
+## Creating an External Connection
 
 1. Click on your name in the right hand side of the application header bar. This will open
    up the User Options pane.
@@ -33,7 +35,7 @@ external connection when we create the mount point.
 7. Fill in the remaining fields in the form with the appropriate information.
    The remain fields are specific to the connection type.
 
-# Fields Common to All External Connections
+## Fields Common to All External Connections
 
 * *Name* - This is a friendly, user-displayed name of the external connection as it will appear in your
   list of active connections.
@@ -55,7 +57,7 @@ external connection when we create the mount point.
   to build the viewing URL when the user clicks the "View in XXX" button. Normally this field is
   filled in with the appropriate defaults. This field can be overridden in the mount point.
 
-# Azure DevOps-Specific Fields
+## Azure DevOps-Specific Fields
 Azure DevOps uses a three-tiered organization of repositories: the organization, project, and
 repository. You can specify the default organization name in the external connection, the assumption
 being that you will connect to multiple repositories within the same organization. Therefore, the
@@ -83,7 +85,7 @@ one external connection per organization in your Azure DevOps account.
   https://dev.azure.com/$REPONAME/_git/$PROJECTNAME?path=$URLENCODED_RELATIVEPATH
   ```
   
-# Bitbucket-Specific Fields
+## Bitbucket-Specific Fields
 Bitbucket uses a two-tiered organization of repositories: the workspace id (for company accounts) or
 the username (for individual accounts), and the repository name.
 
@@ -109,7 +111,7 @@ Each workspace/username can contain multiple repositories.
   https://bitbucket.org/$WORKSPACEID/$REPONAME/src/master/$URLENCODED_RELATIVEPATH
   ```
 
-# GitHub-Specific Fields
+## GitHub-Specific Fields
 GitHub uses a two-tiered organization of repositories: the owner name, which is either the username
 of the account for individual users, or the organization name for company accounts, and the repository
 name.
@@ -130,7 +132,7 @@ recommend creating one external connection per owner name.
   https://github.com/$OWNERNAME/$REPONAME/blob/master/$URLENCODED_RELATIVEPATH
   ```
 
-# GitLab-Specific Fields
+## GitLab-Specific Fields
 GitHub uses a two-tiered organization of repositories: the owner or group name, which is either the
 name of the account for individual users, or the name of the group for company accounts, and the
 "project slug" which represents the repository. In GitLab, a project is a repository.
@@ -151,7 +153,7 @@ recommend creating one external connection per owner name.
   https://gitlab.com/$OWNERNAME/$PROJECTSLUG/-/tree/main/$URLENCODED_RELATIVEPATH
   ```
 
-# External Connections for Generic Git Hosts
+## External Connections for Generic Git Hosts
 
 External connections for generic git hosts can also be created to store a personal access token to
 access the desired Git repository.

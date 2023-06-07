@@ -1,8 +1,10 @@
 ---
+weight: 60
 order: 6
 Title: "VM Install : Linode"
+description: How to install OpenSquiggly on Linode.
 ---
-# Overview of Installing on Linode
+## Overview of Installing on Linode
 
 We've provided a quick setup script that makes it easy to configure your disk space and
 install dependencies on a virtual machine in Linode.
@@ -17,7 +19,7 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 1 : Creating a Virtual Machine
+## Part 1 : Creating a Virtual Machine
 
 ### Steps to Complete
 1. Log into your Linode cloud portal.
@@ -48,37 +50,37 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 2 : Running the Setup Script
+## Part 2 : Running the Setup Script
 
 ### Steps to Complete
 1. SSH into the VM
-   ```
+   ```bash
    ssh root@your_linode_ip_address
    ```
 2. Change to the /opt folder
-   ```
+   ```bash
    cd /opt
    ```
 3. Install unzip
-   ```
+   ```bash
    sudo apt update
    sudo apt install unzip
    ```
 4. Retrieve the Application Files. Visit the OpenSquiggly website at https://opensquiggly.com for
    the latest download instructions which have have changed since this document was published.
-   ```
+   ```bash
    sudo wget http://files.opensquiggly.com/opensquiggly.latest.zip
    ```
 5. Unzip the file
-   ```
+   ```bash
    sudo unzip opensquiggly.latest.zip -d OpenSquiggly
    ```
 6. Change to the /opt/OpenSquiggly/setup folder
-   ```
+   ```bash
    cd /opt/OpenSquiggly/setup
    ```
 7. Invoke the setup script.
-   ```
+   ```bash
    sudo bash linode-setup.sh
    ```
 8. Follow the setup instructions and enter the information when prompted. Please see the
@@ -98,7 +100,7 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 3 : Post-Installation Testing
+## Part 3 : Post-Installation Testing
 
 ### Steps to Complete
 1. From your browser, navigate to the IP address DNS address where your Linode VM is registered.

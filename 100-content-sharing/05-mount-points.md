@@ -1,8 +1,10 @@
 ---
 Order: 5
+weight: 50
 Title: Managing Mount Points
+description: How to create mount points associated with an organization.
 ---
-# Overview of Mount Points
+## Overview of Mount Points
 
 As discussed in the chapters "Mounting Source Code Repositories" and "Mounting
 Documentation Repositories", a mount point is used to attach to an external
@@ -13,7 +15,7 @@ Mount points for an organization are managed the same was as mount points
 for a personal account. The only thing that is different is that the owner of the mount
 point is an organization account instead of an individual account.
 
-# Adding Mount Points to an Organization
+## Adding Mount Points to an Organization
 
 While logged into a personal account to which you have administrative privileges on an
 organization, open the User Options form and expand the Organizations accordion.
@@ -33,14 +35,14 @@ For more information on the fields used by the mount point type, see the chapter
 
 When finished, click the Save button to add and save the external connection.
 
-# Editing Mount Points
+## Editing Mount Points
 
 To edit a mount point, click the Edit button on the row corresponding to the desired
 Mount Point in the connections list.
 
 Enter the desired changes into the form and click Save.
 
-# Deleting Mount Points
+## Deleting Mount Points
 
 To delete a mount point, it is recommended (though not required) that you first remove any
 documents in your document tree that reference the mount point. Then, click the Delete button

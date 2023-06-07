@@ -1,8 +1,10 @@
 ---
+weight: 150
 order: 15
 Title: OAuth on GitHub
+description: How to configure OpenSquiggly to use OAuth authentication for GitHub.
 ---
-# About GitHub
+## About GitHub
 
 GitHub is one of the Git hosting systems explicitly supported by OpenSquiggly.
 Once you've installed your OpenSquiggly instance, users can connect to their repositories on GitHub
@@ -26,7 +28,7 @@ performed the setup and configured the cloud portal. However, the keys we use ar
 with the public, as that would defeat the purpose of OAuth authentication. Each private OpenSquiggly instance
 must be configured to use it's own private keys.
 
-# Configuring GitHub for OAuth
+## Configuring GitHub for OAuth
 
 1. Create an account and an organization on GitHub by visiting https://github.com.
 2. Since we are assuming that you are creating an OpenSquiggly self-managed instance for a company, vs. a 
@@ -91,20 +93,20 @@ must be configured to use it's own private keys.
     sudo systemctl restart opensquiggly
     ```
 
-# Videos
+## Videos
 
-## Part 1 : Registering an OAuth Application
+### Part 1 : Registering an OAuth Application
 
 <iframe width="1024" height="854" src="https://www.loom.com/embed/458e2a2359114b718d1ec5d0fcfa44ca" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## Part 2 : Configuring GitHub OAuth
+### Part 2 : Configuring GitHub OAuth
 
 <iframe width="1024" height="818" src="https://www.loom.com/embed/aff1cb5ef4f841b987fd9de4f8bd416d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## Part 3 : Demo of GitHub OAuth
+### Part 3 : Demo of GitHub OAuth
 
 <iframe width="1024" height="854" src="https://www.loom.com/embed/5dea8f0ead1e4f05b38f572701956179" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## Part 4 : Viewing and Revoking Authorizations
+### Part 4 : Viewing and Revoking Authorizations
 
 <iframe width="1024" height="854" src="https://www.loom.com/embed/c9ccc15595cf411a8db0739139e230ab" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

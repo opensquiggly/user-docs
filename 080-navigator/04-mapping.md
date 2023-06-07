@@ -1,8 +1,10 @@
 ---
+weight: 40
 Order: 4
 Title: Mapping Pages to Mount Points
+description: How to add pages that map to and reference content within mount points.
 ---
-# Creating a Mapped Page
+## Creating a Mapped Page
 
 Creating a mount point merely makes the documents and source code files in that mount point
 available to potentially be added to your document tree. To all mounted files to appear in
@@ -22,7 +24,7 @@ Fill in the "Add Mapped Page" section as follows:
   reference the entire point point with a document tree, enter "/".
 * Press Add New to add the new mapped page to the bottom (last child) of the current page.
 
-# Inserting a Mapped Page at a Location
+## Inserting a Mapped Page at a Location
 
 To insert a mapped page as a child or sibling of an existing page, first add it as the last
 topic page of the current page, as discussed about, then click and drag the page to the final

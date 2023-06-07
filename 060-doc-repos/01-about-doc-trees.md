@@ -1,15 +1,12 @@
 ---
+weight: 10
 Order: 1
 Title: The Doc Formatter
+description: >
+  This section discusses how document formatters are used to filter and format the
+  files contained within a mount point.
 ---
-# Outline - Remove After Completing
-* Attach documentation as its own mount point
-* Reusing an existing mount point
-* Using the OpenSquiggly Simplified Document Tree Formatter
-  * Text files: .md, .html, .xml
-* How XML files are processed and rendered using XSLT transforms
-
-# Introduction to Document Trees
+## Introduction to Document Trees
 
 In addition to displaying your files to you in an unfiltered, unformatted view, OpenSquiggly
 can also dynamically process your files and display them to you in a filtered and formatted view.
@@ -22,7 +19,7 @@ Folders tree type, which displays everything in your repository.
 In this chapter we'll discuss the second tree format type available, the OpenSquiggly Simplified
 Document Tree Formatter.
 
-# Supported Files
+## Supported Files
 
 If the document tree formatter finds any of the following files, it will render them in
 the document tree's table of contents:
@@ -38,7 +35,7 @@ For example, if you place image files (for example, .gif, .jpg, or .png files) i
 you can reference and embed those image files from your documentation files, but the image files
 themselves will not appear in the table of contents.
 
-# Processing Markdown Files
+## Processing Markdown Files
 
 When OpenSquiggly renders a Markdown file with the doc tree type, it processes the file with
 a built-in Markdown processor, which turns it into HTML that the browser can render. As is the
@@ -51,7 +48,7 @@ and other non-document oriented HTML that could be dangerous for the browser to 
 The final processed and sanitized HTML is then sent to the browser for rendering in the content
 pane for that page.
 
-# Processing HTML Files
+## Processing HTML Files
 
 HTML files are processed similarly to HTML files, except there is no Markdown processor to
 pre-process the file. Other than the sanitization process which is the same as used by the 
@@ -70,7 +67,7 @@ user reading the document will notice any difference in performance.
 However, if you know in advance that you are authoring pure HTML content, then you might
 want to store it in an HTML file instead of a Markdown file just for reasons of content purity.
 
-# XML Files
+## XML Files
 
 XML files are also supported and recognized by the doc tree type formatter. When the formatter
 sees an XML file, it can optionally transform the file with a built-in XSLT processor. This

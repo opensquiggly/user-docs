@@ -1,8 +1,10 @@
 ---
+weight: 10
 Order: 1
 Title: Overview
+description: An overview of how to uses pages within OpenSquiggly as a wiki to author documentation.
 ---
-# Overview of Authoring Capabilities
+## Overview of Authoring Capabilities
 
 In addition to being able to host and curate documents from external sources,
 you can directly author documents from within the OpenSquiggly system itself.
@@ -26,7 +28,7 @@ Even the software developers themselves may at times choose to use internal docu
 authoring for content that they want to get done more quickly, or which may not benefit
 from being stored and versioned alongside the source code in a version control system.
 
-# Summary of Authoring Approaches
+## Summary of Authoring Approaches
 
 * Internally Authored
   * Advantages

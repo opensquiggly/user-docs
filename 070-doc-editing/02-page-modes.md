@@ -1,8 +1,11 @@
 ---
+weight: 20
 Order: 2
 Title: Page Modes
+description: >
+  A brief discussion of the three page modes: view, edit, and edit page options.
 ---
-# Page Modes
+## Page Modes
 
 When you navigate and read documents in OpenSquiggly, the page is by default in "View" mode.
 

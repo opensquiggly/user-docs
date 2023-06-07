@@ -1,8 +1,10 @@
 ---
+weight: 20
 order: 2
 Title: "VM Install : Amazon"
+description: How to install OpenSquiggly on an Amazon AWS instance.
 ---
-# Overview of Installing on Amazon
+## Overview of Installing on Amazon
 
 We've provided a quick setup script that makes it easy to configure your disk space and
 install dependencies on an Amazon AWS instance.
@@ -16,7 +18,7 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 1 : Creating a Instance
+## Part 1 : Creating a Instance
 
 ### Steps to Complete
 1. Log into your Amazon AWS cloud portal.
@@ -39,7 +41,7 @@ In this section, you'll complete the following steps:
    to clone.
 8. Click Launch Instance, and wait for the Instance to be provisioned
 
-### Video
+### Video of Creating AWS Instance
 <iframe 
   width="1024" 
   height="818" 
@@ -52,44 +54,44 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 2 : Running the Setup Script
+## Part 2 : Running the Setup Script
 
 ### Steps to Complete
 1. SSH into the Instance
-   ```
+   ```bash
    ssh ubuntu@your_aws_instance_address
    ```
 2. Change to the /opt folder
-   ```
+   ```bash
    cd /opt
    ```
 3. Install unzip
-   ```
+   ```bash
    sudo apt update
    sudo apt install unzip
    ```
 4. Retrieve the Application Files. Visit the OpenSquiggly website at https://opensquiggly.com for
    the latest download instructions which have have changed since this document was published.
-   ```
+   ```bash
    sudo wget http://files.opensquiggly.com/opensquiggly.latest.zip
    ```
 5. Unzip the file
-   ```
+   ```bash
    sudo unzip opensquiggly.latest.zip -d OpenSquiggly
    ```
 6. Change to the /opt/OpenSquiggly/setup folder
-   ```
+   ```bash
    cd /opt/OpenSquiggly/setup
    ```
 7. Invoke the setup script.
-   ```
+   ```bash
    sudo bash aws-setup.sh
    ```
 8. Follow the setup instructions and enter the information when prompted. Please see the
    video below for additional guidance.
 
 
-### Video
+### Video of Installing on AWS Instance
 <iframe 
   width="1024" 
   height="818" 
@@ -102,7 +104,7 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 3 : Post-Installation Testing
+## Part 3 : Post-Installation Testing
 
 ### Steps to Complete
 1. From your browser, navigate to the IP address DNS address where your Instance is registered.
@@ -116,7 +118,7 @@ In this section, you'll complete the following steps:
    working.
 8. Experiment with the Navigator to arrange your document tree to your liking.
 
-### Video
+### Video of Post-Installation Testing
 <iframe 
   width="1024" 
   height="818" 
@@ -126,4 +128,3 @@ In this section, you'll complete the following steps:
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
-

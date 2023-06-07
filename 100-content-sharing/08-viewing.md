@@ -1,6 +1,8 @@
 ---
 Order: 8
+weight: 80
 Title: Viewing Documents from Other Organizations
+description: How users can view documents from other organizations that they are members of.
 ---
 Once you've been granted permissions to read a mount point in an organization,
 you can graft mount point documents into your document tree in the same way that

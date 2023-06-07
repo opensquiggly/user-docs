@@ -1,8 +1,14 @@
 ---
+weight: 20
 Order: 2
 Title: Private Portals
+description: >
+  This section gives an overview of hosted private portals. Private portals are the half-way house
+  between the public instance and self-hosted portals. We manage the portal for you in a private instance
+  with a separate database that is not shared with other users. Private portals will be available in the
+  future. In the mean time, please consider a self-hosted option.
 ---
-# Cloud Hosted Private Portals
+## Cloud Hosted Private Portals
 
 Our cloud hosted private portals work and act a lot like our shared portal, except they provide additional
 data security by storing your data on a private database instance and indexed by a privately managed document
@@ -21,12 +27,12 @@ If you think our prices are too high, think you can purchase cloud resources at 
 and you don't mind the extra labor investments needed to install and manage the software, then our
 self-managed private portals may be the right choice for you.
 
-# Creating a Private Portal
+## Creating a Private Portal
 
 Private portals are currently under development and in beta testing. Please contact us for the current status
 and for instructions on how to create a private portal.
 
-# Securing Private Portals with Virtual Private Networks
+## Securing Private Portals with Virtual Private Networks
 
 When you create your portal, you have two general access choices: 1) allow any user on the Internet to access
 the portal at it's installed domain address (of coure, they'll still need login credentials to sign in), 
@@ -42,7 +48,7 @@ up VPN access for your private portal.
 Virtual Private Network access will be available at a future dat, based on user demand. To learn more, please 
 contact us regarding our product roadmap and to express your interest in VPN access.
 
-# Where Your Private Portal is Hosted
+## Where Your Private Portal is Hosted
 
 After your private portal is provisioned and configured you will receive an e-mail containing access instructions.
 
@@ -67,7 +73,7 @@ OpenSquiggly instance, such as:
 
 After that, your users can access the portal by visiting: https://myawesomedocs.megacorp.com.
 
-# Managing Self-Registration Access on Private Portals
+## Managing Self-Registration Access on Private Portals
 
 Depending on your security needs, there are three ways users can be created on the system:
 
@@ -93,11 +99,11 @@ This is important, since surely you do not want any user anywhere in the world t
 on your system (unless you truly are intending to create a public portal for global access, such as you might
 want to do for publishing end user documentation).
 
-# Two Factor Authentication
+## Two Factor Authentication
 
 You can optionally provision your instance to require two-factor authentication for users to log in.
 
-# Summary of Cloud Hosted Private Portal Security Measures
+## Summary of Cloud Hosted Private Portal Security Measures
 
 * Data is stored on a private database instance
 * Documents are indexed on a private document indexing instance
@@ -116,7 +122,7 @@ not be satisfied unless they can completely control data access via their own co
 
 For those users, we offer self-managed private portal hosting plans.
 
-## Creating an Account
+### Creating an Account
 
 Access the system by visiting the web address sent to you by OpenSquiggly or using the custom domain name
 configured by your network administrator.
@@ -133,12 +139,12 @@ IMPORTANT: Be sure to remember and use your LOGIN ID when you sign in. Don't use
 login id - it won't work. The reason why we do it this way is because we allow you to create multiple accounts
 with the same e-mail address. Therefore, the LOGIN ID is the only thing that we can be sure is unique.
 
-## Signing In
+### Signing In
 
 After you've created your account, sign in using your LOGIN ID and PASSWORD. From here you'll be taken to your
 Home page, which is the root page from which you navigate to all your documents.
 
-## Resetting Forgotten Passwords
+### Resetting Forgotten Passwords
 
 If you've forgotten your password, click on the "Forgot your password" link near the bottom of the
 sign in form.
@@ -151,7 +157,7 @@ You will receive an e-mail containing a link to reset your password. Click on th
 password, and a second time to confirm it. After resetting your password, go back to the sign in page and
 login with your login id and new password.
 
-# Next Steps
+## Next Steps
 
 Initially your Home Page will be completely empty until you add documents to your navigator, but it doesn't need
 to stay that way for very long. Because we allow you to quickly connect your account to source code repositories
@@ -176,11 +182,3 @@ That should be enough to get you out of the starting gate and using OpenSquiggly
 OpenSquiggly with an eye for making life better for software developers. We sincerely hope that you enjoy
 using OpenSquiggly and can begin using it to do your best work and make positive impacts on your projects
 and for your customers.
-
-
-
-
-
-
-
-

@@ -1,8 +1,10 @@
 ---
+weight: 40
 Order: 4
 Title: Page Editing Workflow
+description: This section describes the general workflow for editing pages and the various actions the user can perform.
 ---
-# Overview
+## Overview
 
 To edit a page, click the "Edit Page" icon (the Pencil icon) in the right hand side of that page header.
 
@@ -11,7 +13,7 @@ To return to view mode after editing, click the "View Page" icon (the Eyeball ic
 Note that there is no "Save" button. Changes are saved to the page as soon as you append a new
 snippet or save changes to an existing snippet.
 
-# Appending Text to a Page
+## Appending Text to a Page
 
 Click the Add icon (+ sign) in the page header to expand the content editor at the bottom section.
 The page is split into two sections with a snippet previewer in the top pane and the content editor
@@ -27,21 +29,21 @@ of the content editor.
 
 The new text snippet will be appended to the bottom of the page.
 
-# Inserting Text within the Page
+## Inserting Text within the Page
 
 To insert text, first append a new text snippet to the page, then use the gripper icon to drag the
 snippet with your mouse and move it to the desired location within the document.
 
 In the future we will add the ability to insert snippets directly within the page at desired locations.
 
-# Editing Existing Text
+## Editing Existing Text
 
 Notice the three icons in the highlighted left margin of the page. Click the Pencil icon in the
 row associated with the snippet you wish to edit.
 
 Edit the text content in the content editor pane and press Update or Update & Close.
 
-# Deleting Text
+## Deleting Text
 
 In the highlighted left margin of the page, click the Delete icon (the X icon) in the row associated
 with the snippet you wish to delete.
@@ -50,7 +52,7 @@ Confirm the deletion process by clicking OK at the confirmation prompt.
 
 Question: Is there a way to recover deleted text? Is there a way to permanently delete deleted snippets.
 
-# Rearranging Snippets
+## Rearranging Snippets
 
 In the highligted left margin, click and hold the mouse on the Gripper icon in the row associated
 with the snippet you wish to move.
@@ -58,13 +60,13 @@ with the snippet you wish to move.
 While holding the left mouse button down, drag the snippet up or down on the page to the new location
 you wish to place the snippet, and release the mouse button.
 
-# Hyperlinks
+## Hyperlinks
 
 ??? Should this section be here ???
 
 Need to discuss URL slugs.
 
-# Embedding Images
+## Embedding Images
 
 ??? Should this section be here ???
 
@@ -79,7 +81,7 @@ an URL slug to the image. I should add this to the backlog.
 Also, file uploads are limited to certain sizes, which are annoying, and fail without returning
 any error to the user.
 
-# Embedding Files
+## Embedding Files
 
 ??? Should this section be here ???
 

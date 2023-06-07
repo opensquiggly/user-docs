@@ -1,14 +1,16 @@
 ---
 Order: 7
+weight: 70
 Title: Granting Permissions to Members
+description: How to grant permissions to members of a group.
 ---
-# About Access Control Lists
+## About Access Control Lists
 
 Each group you've created as an associated "access control list", where each entry
 in the access control list grants a permission to a mount point. You can have as many
 entries in the access control list as needed.
 
-# Granting a Permission to a Group
+## Granting a Permission to a Group
 
 While logged into a personal account to which you have administrative privileges on an
 organization, open the User Options form and expand the Organizations accordion.
@@ -37,14 +39,14 @@ three permissions you wish to grant:
 
 When finished, click the Save button to add the new entry to the access control list.
 
-# Editing an Existing Permission
+## Editing an Existing Permission
 
 To modify an existing permission, click the Edit button in the row corresponding to the
 access control list entry you wish to modify.
 
 Change the permissions as desired and click the Save button to save the changes.
 
-# Removing a Permission
+## Removing a Permission
 
 To remove a permission, click the Remove button in the row corresponding to the access
 control list entry you wish to remove.

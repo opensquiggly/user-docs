@@ -1,14 +1,17 @@
 ---
+weight: 10
 Order: 1
 Title: Foreword
+description: >
+  An introduction to OpenSquiggly from its founder and creator.
 ---
-# Introduction
+## Introduction
 
 Hello and thank you for choosing OpenSquiggly for your software project documentation needs. My name is Kevin Dietz,
 a long-time veteran of the software industry and the founder of OpenSquiggly. Let me tell you my story, the
 challenges I see that face the software industry, and why I created OpenSquiggly.
 
-# Software Agility, Then and Now
+## Software Agility, Then and Now
 
 We all know the history of the Agile Manifesto that started the agile software development movement over the last
 two decades; a small group of software veterans, many of them consultants and authors, met in February 2001 at the
@@ -40,7 +43,7 @@ up with the Agile Manifesto:
 * Favor customer collaboration over contract negotiation
 * Favor responding to change over following a plan
 
-# Where Did We Go Wrong?
+## Where Did We Go Wrong?
 
 Sadly, I think the state of affairs at an average software project in corporate America looks very different from the
 quaint notion that the Agile Manifesto authors had in mind in 2001. Things are much messier in the world today. 
@@ -70,7 +73,7 @@ software today, we would have blown ourselves to Kingdom Come long ago.
 Different approaches are needed to continue the march of progress, and that's what we're trying to create with
 OpenSquiggly.
 
-# The Role of Documentation
+## The Role of Documentation
 
 Let's dig deeper into that second Agile Manifesto principle:
 
@@ -95,14 +98,14 @@ base that you cultivate throughout the lifetime of your project. We espouse an a
 that fits in with the developer's ordinary daily workflow; documentation that supports and empowers the team, not 
 hinders it.
 
-# What is It?
+## What is It?
 
 What is OpenSquiggly? 
 
 OpenSquiggly is a software developer productivity platform, focused on curating documentation and source code from many
 projects across the organization, with the goal of helping developers find information faster and do their jobs better.
 
-## Document Authoring
+### Document Authoring
 
 You can author documents inside of OpenSquiggly in the same way you can author documents in a corporate wiki, with
 a couple of differences.
@@ -124,7 +127,7 @@ and HTML content, as it gives developers the most control over the type of conte
 Document editing via a traditional corporate wiki experience is just the beginning, however. OpenSquiggly adds several
 features beyond that to make it a documentation portal developers will love. These include:
 
-## Docs-As-Code Publishing Workflow
+### Docs-As-Code Publishing Workflow
 
 You don't need to author your documents internally within the OpenSquiggly system. You can author them and store them
 in your favorite Git hosting system, using any text editor of your choosing, and then host those externally-stored
@@ -136,7 +139,7 @@ system, where they can be edited and versioned the same as ordinary source code.
 can merge content from separate sources, split them apart, and recombine them in highly adaptable ways to meet the needs
 of your project.
 
-## Source Code & Documentation Together
+### Source Code & Documentation Together
 
 Besides bringing formatted documents into your document tree, you can also bring in the actual source code of your
 project or your project's dependencies. This gives you a unified environment for perusing and searching your documentation
@@ -151,7 +154,7 @@ want to look up some code from another group to see how they solved a particular
 that had thousands upon thousands of repositories - I can't clone them all locally. OpenSquiggly can be a common environment
 that has instant access to all of the repositories around the organization.
 
-## Reference Documentation Support
+### Reference Documentation Support
 
 When we designed OpenSquiggly, we wanted a way to host class-and-method level reference documentation alongside your
 high level architecture documents and source code, giving you a complete end-to-end view of your project. The secret sauce
@@ -164,7 +167,7 @@ My observation is that other wikis on the market don't do a good job of letting 
 generated from the code structure, and since this is an important feature for developers, we wanted to bake these
 capabilities into the platform.
 
-## Customizability
+### Customizability
 
 Each developer can customize their documentation tree to their liking, based on their needs and the tasks they are working
 on. With other wikis, you're stuck with a document structure as it was laid out by the author.
@@ -172,7 +175,7 @@ on. With other wikis, you're stuck with a document structure as it was laid out 
 Since developers can quickly become overwhelmed with too much information, it is important that each developer
 can create customized views of exactly what they need to see for their specific work.
 
-## Regular Expression Searching
+### Regular Expression Searching
 
 Often times, there is no existing documentation that will provide the technical details you are looking for.
 When that happens, a good strategy is to start searching and reading the source code.
@@ -183,7 +186,7 @@ for searching for patterns in the code, and we provide a extensive set of includ
 that let you easily search for specific files, repositories, and other conditions to help you narrow down your
 search to exactly what you're looking for.
 
-## And Even More
+### And Even More
 
 As you use OpenSquiggly you'll discover more features and more nuances to the product that we haven't explicitly
 covered here. And of course, we're always working hard to add more relevant functionality to the product.

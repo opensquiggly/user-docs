@@ -1,8 +1,10 @@
 ---
+weight: 30
 order: 3
 title: "VM Install : Azure"
+description: How to install OpenSquiggly on an Azure virtual machine.
 ---
-# Overview of Installing on Azure
+## Overview of Installing on Azure
 
 We've provided a quick setup script that makes it easy to configure your disk space and
 install dependencies on a virtual machin in Microsoft Azure.
@@ -17,7 +19,9 @@ In this document, you'll complete the following steps:
 
 <hr>
 
-# Part 1 : Creating a Virtual Machine
+## Part 1 : Creating a Virtual Machine
+
+### Steps to Complete
 
 1. Visit your Azure Portal at https://portal.azure.com and login to your Azure account.
 2. In the search box, search for "virtual machine", and select Virtual Machines from the list.
@@ -35,33 +39,35 @@ In this document, you'll complete the following steps:
 5. Click the Create button to start the provisioning process.
 6. Download the private key using the popup window that will appear.
 
-# Video
+### Video
 Not available yet. Please check back later.
 
 <hr>
 
-# Part 2 : Enabling SSH Access to the VM
+## Part 2 : Enabling SSH Access to the VM
+
+### Steps to Complete
 1. Copy the downloaded SSH key into your ~/.ssh folder
-   ```
+   ```bash
    cd ~/.ssh
    cp ~/Downloads/file_name_here.pem .
    chmod 400 file_name_here.pem
    ```
 2. Test the SSH access with:
-   ```
+   ```bash
    ssh -o "IdentitiesOnly=yes" -i ~/.ssh/file_name_here.pem azureuser@VM.IP.ADDRESS.HERE
    ```
 3. Create an alias in your .bashrc file to make it easier to SSH:
-   ```
+   ```bash
    echo alias ssh_vm=\'ssh -o "IdentitiesOnly=yes" -i ~/.ssh/file_name_here.pem azureuser@VM.IP.ADDRESS.HERE\' >> ~/.bashrc
    source ~/.bashrc
    ```
 4. Test your SSH alias
-   ```
+   ```bash
    ssh_vm
    ```
 
-# Video
+### Video
 <iframe
   width="1024"
   height="800"
@@ -74,40 +80,42 @@ Not available yet. Please check back later.
 
 <hr>
 
-# Part 3 : Running the Setup Script
+## Part 3 : Running the Setup Script
+
+### Steps to Complete
 1. SSH into the VM
-   ```
+   ```bash
    ssh_vm
    ```
 2. Change to the /opt folder
-   ```
+   ```bash
    cd /opt
    ```
 3. Install unzip
-   ```
+   ```bash
    sudo apt update
    sudo apt install unzip
    ```
 4. Retrieve the Application Files. Visit the OpenSquiggly website at https://opensquiggly.com for the latest download instructions which have have changed since this document was published.
-   ```
+   ```bash
    sudo wget http://files.opensquiggly.com/opensquiggly.latest.zip
    ```
 5. Unzip the file
-   ```
+   ```bash
    sudo unzip opensquiggly.latest.zip -d OpenSquiggly
    ```
 6. Change to the /opt/OpenSquiggly/setup folder
-   ```
+   ```bash
    cd /opt/OpenSquiggly/setup
    ```
 7. Invoke the setup script.
-   ```
+   ```bash
    sudo bash azure-setup.sh
    ```
 8. Follow the setup instructions and enter the information when prompted. Please see the
    video below for additional guidance.
 
-# Video
+### Video
 <iframe
   width="1024"
   height="778"
@@ -120,7 +128,7 @@ Not available yet. Please check back later.
 
 <hr>
 
-# Part 4 : Post-Installation Testing
+## Part 4 : Post-Installation Testing
 
 1. From your browser, navigate to the IP address DNS address where you VM is registered.
 2. Click the "Create account" button and create a new account.
@@ -133,7 +141,7 @@ Not available yet. Please check back later.
    working.
 8. Experiment with the Navigator to arrange your document tree to your liking.
 
-# Video
+### Video
 <iframe
   width="1024"
   height="840"

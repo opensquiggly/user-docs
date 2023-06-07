@@ -1,8 +1,11 @@
 ---
+weight: 30
 Title: Alternatives
 Order: 3
+description: >
+  Comparing OpenSquiggly to static site generators and other approaches to team documentation.
 ---
-# What Is OpenSquiggly, Revisited?
+## What Is OpenSquiggly, Revisited?
 
 We answered this question in the Foreword, but let's come back to this question again
 and look at it from a different perspective.
@@ -21,7 +24,7 @@ You provide the content of your documentation and files, and OpenSquiggly provid
 table of contents management, the indexing and search infrastructure, account management
 and access control, etc.
 
-# Static vs. Dynamic Site Generation
+## Static vs. Dynamic Site Generation
 
 Traditional static site generators are a viable way of building a documentation-oriented
 web site.
@@ -94,7 +97,7 @@ describe the desired table of contents in some place that is separate from the c
 check the files into Git, and then let a document hosting environment take care of all the rest 
 (document retrieval, Markdown formatting, authenticated access, indexing, searching, bookmarks, etc.).
 
-# Dynamic Site Generation
+## Dynamic Site Generation
 
 With that context in mind, you can think of OpenSquiggly as a cousin of static site generators.
 It is a *dynamic* site generator / hosting environment.
@@ -136,7 +139,7 @@ The OpenSquiggly workflow then looks as follows:
 +---------------------------------------------+                                                      
 ```
 
-# Hybrid Approaches
+## Hybrid Approaches
 
 OpenSquiggly has rich, built-in capabilities for retrieving, formatting, and displaying documents.
 We've designed it to cover all the usual use cases that software development teams are expected to
@@ -212,7 +215,7 @@ This is an advanced topic and we won't give it further treatment here. For now, 
 with the thought that, one way or another, OpenSquiggly is flexible enough to handle all your project 
 documentation needs.
 
-# Summary
+## Summary
 
 In conclusion, OpenSquiggly can be thought of as a "smart web server" that performs dynamic
 processing on simply-written documents and dynamically creates and serves a web site from them.

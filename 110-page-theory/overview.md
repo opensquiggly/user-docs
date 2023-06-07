@@ -1,16 +1,10 @@
 ---
 Order: 1
+weight: 10
 Title: The OpenSquiggly Paradigm
+description: A walkthrough of the page organization paradigm used within OpenSquiggly.
 ---
-Outline - Remove After Completing
-* The page as the basic unit of organization
-* The snippet as the basic unit of content
-* Snippet types
-  * Plain Text Snippets
-  * File Snippets
-* Finding references ??? - I think this is already covered, do we need to cover it again?
-
-# Introduction
+## Introduction
 
 In previous chapters we've discussed practical and pragmatic operational descriptions
 of how to use OpenSquiggly.
@@ -25,7 +19,7 @@ it hopes to serve, namely, software development teams, and by the perceived use 
 by our customers. However, at its heart, OpenSquiggly is more than that. In this chapter
 we discuss the theory of the OpenSquiggly paradigm.
 
-# Pages as the Primary Unit of Content
+## Pages as the Primary Unit of Content
 
 All content viewed with OpenSquiggly is done through the use of pages.
 
@@ -94,6 +88,6 @@ always get their title from the external content (either the file or folder name
 | Virtual Page, RelativePath = folder | From Folder Name | Read folder items from Mount Point @ RelativePath | No                  | Return single snippet "This is a directory"                                  |
 | Virtual Page, RelativePath = file   | From File Name   | Return an empty list                              | No                  | Return single snippet containing file contents of Mount Point @ RelativePath |
 
-# Example
+## Example
 
 ![PageTheoryDrawing](https://share.balsamiq.com/c/naxoCiucUULrsT5EdxrmHU.png)

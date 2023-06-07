@@ -1,8 +1,10 @@
 ---
+weight: 20
 Order: 2
 Title: Mounting Public Repos
+description: How to connect to public Git repositories.
 ---
-# About Public Repositories
+## About Public Repositories
 
 When we say a "public repository" we mean to say a repository that can be connected and cloned
 anonymously, without specifying any user name, password, or access token  credentials.
@@ -23,7 +25,7 @@ a web interface.
 In this way OpenSquiggly can use any Git hosting system, so long as your OpenSquiggly instance is
 able to access your Git system via an HTTP/HTTPS URL.
 
-# General Instructions for Mounting Repositories
+## General Instructions for Mounting Repositories
 
 1. Click on your name in the right hand side of the application header bar. This will open
    up the User Options pane.
@@ -35,7 +37,7 @@ able to access your Git system via an HTTP/HTTPS URL.
 
 See the remaining sections of this chapter for more information on each mount point field.
 
-# Fields Common to All Public Connections Types
+## Fields Common to All Public Connections Types
 
 * *Name* - This is a friendly, user-displayed name of the mount point as it will appear in your
   list of active mount points.
@@ -66,7 +68,7 @@ See the remaining sections of this chapter for more information on each mount po
 * *Refresh Type* - Reserved for future use.
 * *Polling Interval* - Reserved for future use.
 
-# Azure Devops-Specific Fields
+## Azure Devops-Specific Fields
 
 Azure DevOps uses a three-tiered organization of repositories: the organization, project, and
 repository.
@@ -88,7 +90,7 @@ repository.
   https://dev.azure.com/$REPONAME/_git/$PROJECTNAME?path=$URLENCODED_RELATIVEPATH
   ```
 
-# Bitbucket-Specific Fields
+## Bitbucket-Specific Fields
 Bitbucket uses a two-tiered organization of repositories: the workspace id (for company accounts) or
 the username (for individual accounts), and the repository name.
 
@@ -106,7 +108,7 @@ the username (for individual accounts), and the repository name.
   TODO
   ```
 
-# GitHub-Specific Fields
+## GitHub-Specific Fields
 GitHub uses a two-tiered organization of repositories: the owner name, which is either the username
 of the account for individual users, or the organization name for company accounts, and the repository
 name.
@@ -125,7 +127,7 @@ name.
   TODO
   ```
 
-# GitLab-Specific Fields
+## GitLab-Specific Fields
 GitHub uses a two-tiered organization of repositories: the owner or group name, which is either the
 name of the account for individual users, or the name of the group for company accounts, and the
 "project slug" which represents the repository. In GitLab, a project is a repository.
@@ -144,7 +146,7 @@ name of the account for individual users, or the name of the group for company a
   TODO
   ```
 
-# Filling in Fields for Generic Git Hosts
+## Filling in Fields for Generic Git Hosts
 
 For a generic Git host, there are no connection type specific fields to fill out, such as the organization
 name, repository name, project name, workspace ID, or owner name.

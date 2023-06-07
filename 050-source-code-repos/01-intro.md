@@ -1,8 +1,10 @@
 ---
+weight: 10
 Order: 1
 Title: Repo Types & Formats
+description: Overview of connecting external repositories to your OpenSquiggly account.
 ---
-# Introduction to Mounting External Content
+## Introduction to Mounting External Content
 A big feature of OpenSquiggly is the ability to bring in content, namely source code files
 and documentation from external Git repositories. Our aim is to provide a flexible, lightweight
 process tool that puts you in control of how you want to arrange and format your content. OpenSquiggly
@@ -29,7 +31,7 @@ but it is not placed in your document tree immediately (unless you used the Quic
 learn how to add mounted content to your document tree, see Chapter 6, "Managing and Navigating
 Your Document Tree".
 
-# Source Code vs. Documentation Repositories
+## Source Code vs. Documentation Repositories
 
 The main difference between mounting source code repositories, as discussed in this chapter, and
 documentation repositories, as discussed in the next chapter, is the specification of the mount
@@ -56,7 +58,7 @@ you've done so.
 In the next chapter we'll discuss the usage of the second tree type, the OpenSquiggly Simplified Document
 Tree Formatter.
 
-# Cloud-Based Git Hosting Systems vs. Behind-the-Firewall Systems
+## Cloud-Based Git Hosting Systems vs. Behind-the-Firewall Systems
 
 Generally speaking, if you've chosen a cloud-hosted OpenSquiggly deployment option, such
 as our shared cloud hosting plan or our private hosting plan, then you would expect to be able to
@@ -88,7 +90,7 @@ best for you.
 In summary, as long as there is a way for your OpenSquiggly instance to reach your Git hosting system 
 via an HTTP URL, then you will be able to connect and use those repositories within OpenSquiggly.
 
-# HTTP vs. SSH Protocol Access
+## HTTP vs. SSH Protocol Access
 
 Currently OpenSquiggly supports HTTP/HTTPS access to your Git system. We do not support SSH access.
 The main reason why we do not support SSH access is due to security issues.

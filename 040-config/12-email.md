@@ -1,8 +1,10 @@
 ---
+weight: 120
 order: 12
 Title: E-Mail Configuration
+description: How to configure OpenSquiggly to send e-mail notifications.
 ---
-# About E-Mail Notifications
+## About E-Mail Notifications
 
 E-Mail notifications are not configured by default with the OpenSquiggly
 setup scripts. While not strictly necessary, it is a very good idea to
@@ -20,7 +22,7 @@ E-Mail Notifications are used by OpenSquiggly in the following areas:
 * Resetting Forgotten Passwords: Letting a user reset their forgotten password
   requires sending them an e-mail with a link and a key to reset their password.
 
-# Supported E-Mail Systems
+## Supported E-Mail Systems
 
 OpenSquiggly currently supports the MailGun e-mail service, and we'll be adding
 support for other e-mail services in the future.
@@ -29,7 +31,7 @@ support for other e-mail services in the future.
 This should be sufficient for most organizations to handle occassional new user
 registrations and/or password reset requests.
 
-# Steps to Configure MailGun E-Mail Notifications
+## Steps to Configure MailGun E-Mail Notifications
 
 1. Create your MailGun account by visiting https://mailgun.com
 2. In the MailGun dashboard, create a domain for sending e-mails

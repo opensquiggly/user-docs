@@ -1,8 +1,14 @@
 ---
+weight: 70
 order: 7
 Title: Installing on Kubernetes
+description: >
+  Installing OpenSquiggly on the Kubernetes cloud orchestrator, instead of a virtual
+  machine is also possible. In this section we give an overview of the installation
+  process on Kubernetes, and discuss pros and cons of using Kubernetes vs. a virtual
+  machine.
 ---
-# Overview of Installing on Kubernetes
+## Overview of Installing on Kubernetes
 
 Kubernetes is an open-source container orchestration platform that enables automated 
 deployment, scaling, and management of containerized applications. It is a powerful 
@@ -16,7 +22,7 @@ For more information on Kubernetes in general, visit https://kubernetes.io
 When it comes to choosing between installing OpenSquiggly on a virtual machine, as discussed
 in the prior sections, or a Kubernetes cluster, there are several factors to consider.
 
-## Pros
+### Pros
 
 1. *__Fewer Installation Steps__*: While Kubernetes brings with it a learning curve and some
    some added complexity, you may actually find it easier and faster to install OpenSquiggly
@@ -49,7 +55,7 @@ in the prior sections, or a Kubernetes cluster, there are several factors to con
    automatically detecting and replacing failed containers. This means that your application 
    can recover quickly from failures, without having to manually manage virtual machines.
 
-## Cons:
+### Cons:
 
 1. *__Complexity__*: Kubernetes has a steep learning curve and requires a significant 
    investment in terms of time and effort to set up and manage. This means that it may 
@@ -70,24 +76,24 @@ and easier to maintain experience than installing it on a virtual machine.
 
 <hr>
 
-# Installing kubectl
+## Installing kubectl
 
 The kubectl command line tool is used to connect to your Kubernetes cluster and create
 and manage its resources, including the OpenSquiggly resources that we cover in later
 sections. You'll need the kubectl command installed in your desktop in order to execute
 the installation instructions provided in later sections.
 
-## Installing kubectl on Windows
+### Installing kubectl on Windows
 
 Download the latest release `kubectl.exe` from the [official Kubernetes releases page on GitHub](https://github.com/kubernetes/kubernetes/releases).
 
 After downloading the executable, place it in a directory that's in your system's PATH.
 
-## Installing kubectl on MacOS
+### Installing kubectl on MacOS
 
 The easiest way to install `kubectl` on macOS is through Homebrew. If you don't have Homebrew installed, you can install it by following the instructions at [https://brew.sh/](https://brew.sh/).
 
-## Installing kubectl on Linux
+### Installing kubectl on Linux
 
 1. On Linux, you can use `curl` to download `kubectl`. Replace `VERSION` with the version number of Kubernetes you want to download:
 
@@ -95,7 +101,7 @@ The easiest way to install `kubectl` on macOS is through Homebrew. If you don't 
 curl -LO "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubectl"
 ```
 
-## Testing Your kubectl Installation
+### Testing Your kubectl Installation
 
 After installing kubectl, verify it is in your path and accessible from your command line shell.
 
@@ -105,7 +111,7 @@ kubectl version --short
 
 <hr>
 
-# Installing Helm
+## Installing Helm
 
 Helm is often referred to as the 'package manager for Kubernetes'. It's a tool that
 streamlines the process of installing, configuring, and upgrading applications that
@@ -115,7 +121,7 @@ you can manage complexity and simplify the deployment of applications in your Ku
 clusters. In the following sections, we'll guide you through the process of installing
 Helm on your system.
 
-## Installing Helm on Windows
+### Installing Helm on Windows
 
 1. Install Chocolatey, a package manager for Windows. You can find the instructions at
    [https://chocolatey.org/install](https://chocolatey.org/install).
@@ -124,14 +130,14 @@ Helm on your system.
    command prompt:
 
 
-## Installing Helm on MacOS
+### Installing Helm on MacOS
 
 1. The easiest way to install Helm on macOS is through Homebrew. If you don't have
    Homebrew installed, you can install it by following the instructions at [https://brew.sh/](https://brew.sh/).
 
 2. Once Homebrew is installed, you can install Helm with the following command:
 
-## Installing Helm on Linux
+### Installing Helm on Linux
 
 1. On Linux, you can use `curl` to download the latest Helm binary. Run:
 ```bash

@@ -1,8 +1,10 @@
 ---
 Order: 3
+weight: 30
 Title: Managing Organization Members
+description: This section discusses how to add and remove members from organizations.
 ---
-# Adding Organization Members
+## Adding Organization Members
 
 From the "Manage Organizations" accordion in the "User Option" form, click the
 "Manage Members" button.
@@ -23,7 +25,7 @@ organization. It simply makes the available to be added to groups.
 To add organization members to groups, see the section "Managing Groups" later in this
 chapter.
 
-# Removing Organization Members
+## Removing Organization Members
 
 To remove a member from an organization, you must first remove them from any groups
 with that organization.

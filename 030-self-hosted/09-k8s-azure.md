@@ -1,8 +1,10 @@
 ---
+weight: 90
 order: 9
 Title: "Kubernetes : Azure"
+descripton: How to install OpenSquiggly on Microsoft's Azure Kubernetes Service (AKS).
 ---
-# Overview of Installing on AKS
+## Overview of Installing on AKS
 
 Azure Kubernetes Service, or AKS for short, is Azure's managed Kubernetes service.
 The steps for installing OpenSquiggly on Kubernetes from any cloud provider are similar.
@@ -11,13 +13,13 @@ relevant to AKS.
 
 <hr>
 
-# Part 1 : Creating the AKS Cluster
+## Part 1 : Creating the AKS Cluster
 
 TODO
 
 <hr>
 
-# Part 2 : Connecting kubectl to AKS
+## Part 2 : Connecting kubectl to AKS
 
 We assume you've followed the instructions provided earlier to install the kubectl
 command line tool.
@@ -27,7 +29,7 @@ create a context that points to your cluster.
 
 Issue the following command:
 
-```
+```bash
 az aks get-credentials --resource-group your-resource-group-here --name your-cluster-name-here
                                         ------------------------        ----------------------
                                                    ^                               ^
@@ -38,7 +40,7 @@ az aks get-credentials --resource-group your-resource-group-here --name your-clu
 If you're not already logged into Azure, you'll get a message and/or prompt with additional
 information. If necessary, you can log into Azure with:
 
-```
+```bash
 az login
 ```
 
@@ -48,17 +50,17 @@ For additional help, consult the Microsoft documentation here:
 
 * https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster
 
-# Verifying Your Connection
+### Verifying Your Connection
 
 Verify that your desired AKS cluster is set as your current context.
 
-```
+```bash
 kubectl config get-contexts
 ```
 
 Issue the command:
 
-```
+```bash
 kubectl get nodes
 ```
 
@@ -67,24 +69,24 @@ agent node pool.
 
 <hr>
 
-# Part 3 : Setting up Helm
+## Part 3 : Setting up Helm
 
 View your current helm repos with:
 
-```
+```bash
 helm repo list
 ```
 
 Add the OpenSquiggly Helm charts repository to your local Helm repository list with the
 command:
 
-```
+```bash
 helm repo add opensquiggly https://opensquiggly.github.io/helm-charts
 ```
 
 <hr>
 
-# Part 4 : Create a Kubernetes Namespace (Optional)
+## Part 4 : Create a Kubernetes Namespace (Optional)
 
 It's a good idea to create a namespace to contain your OpenSquiggly resources that will
 be installed by the Helm charts. This keeps your resources isolated from any other resources
@@ -93,19 +95,19 @@ manage the resources later.
 
 Create a namespace with the command:
 
-```
+```bash
 kubectl create namespace your-namespace-here
 ```
 
 Make the namespace your current namespace with the command:
 
-```
+```bash
 kubectl config set-context --current --namespace=your-namespace-here
 ```
 
 If this is a newly created namespace, issue the command:
 
-```
+```bash
 kubectl get all
 ```
 
@@ -113,42 +115,42 @@ and verify that the namespace contains no existing resources.
 
 <hr>
 
-# Part 5 : Install OpenSquiggly with Helm
+## Part 5 : Install OpenSquiggly with Helm
 
-```
+```bash
 helm install your-helm-relelase-name-here opensquiggly/allinone --set cloudType=azure[,diskSize=xx]
 ```
 
 Helm release names can contain alphanumeric characters and the hyphen.
 
-## Example with Default 32G Storage:
+### With Default Parameters
 
-```
+```bash
 helm install opensquiggly-test1 opensquiggly/allinone --set cloudType=azure
 ```
 
-## Example with 100G Storage
+### Example With 100G Storage
 
-```
+```bash
 helm install opensquiggly-test1 opensquiggly/allinone --set cloudType=azure,diskSize=100
 ```
 
-## Testing the Install
+### Testing the Install
 
 Ensure that the pod has started by issuing the command:
 
-```
+```bash
 kubectl get pods [--watch]
 ```
 
 When the pod is running, retrieve the load balancer IP address with:
 
-```
+```bash
 kubectl get svc
 ```
 
 Hit the IP address with your browser and that should take you to the OpenSquiggly login screen.
 
-## Video:
+### Video of Installing with Helm
 
 <iframe width="1024" height="795" src="https://www.loom.com/embed/bb167e75db3848fd9f4e98f578cb0d13" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

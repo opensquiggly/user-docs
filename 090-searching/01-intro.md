@@ -1,8 +1,10 @@
 ---
+weight: 10
 Order: 1
 Title: Introduction to Searching
+description: An overview of how to search for content within OpenSquiggly.
 ---
-# Overview
+## Overview
 
 A key component to OpenSquiggly is it's integrated search engine that lets you search both
 your documents and source code with a single, integrated, unified search syntax.

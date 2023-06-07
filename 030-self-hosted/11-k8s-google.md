@@ -1,6 +1,8 @@
 ---
+weight: 110
 order: 11
 Title: "Kubernetes : Google"
+description: How to install OpenSquiggly on Google Kubernetes Engine (GKE).
 ---
 # Overview of Installing on GKE
 

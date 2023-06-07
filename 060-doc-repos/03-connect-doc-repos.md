@@ -1,8 +1,12 @@
 ---
+weight: 30
 Order: 3
 Title: Reusing Mount Points
+description: >
+  In this section we discuss how you can reuse mount points to create different
+  formatted views of the same underlying files.
 ---
-# How to Mount Documentation Repositories
+## How to Mount Documentation Repositories
 
 To connect to a documentation repository, follow the same basic steps outlined in the
 previous chapter about connecting to source code repositories.
@@ -18,7 +22,7 @@ below will be included in the mount point.
 *Tree Format Type* - As we've already discussed, you'll choose the OpenSquiggly Simplified
 Document Tree Formatter as your tree type instead of the Raw Files and Folders tree type.
 
-# Reusing Repositories
+## Reusing Repositories
 
 There are times when you want to mount the same repository twice - once to get the raw
 files and folders, and once again to get the formatted documents.

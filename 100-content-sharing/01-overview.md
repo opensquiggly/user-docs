@@ -1,8 +1,10 @@
 ---
 Order: 1
+weight: 10
 Title: Overview of Content Sharing
+description: A brief overview of how content is shared within OpenSquiggly by using organizations and groups.
 ---
-# Sharing Content with Others
+## Sharing Content with Others
 
 Teams often want to set up a base of documents that can shared with the whole team.
 This is done by creating organizations, adding mount points that are owned by that

@@ -1,14 +1,20 @@
 ---
+weight: 20
 Order: 2
 Title: Compared with Static Sites
+description: >
+  In this section we compare how OpenSquiggly's built-in document formatter can
+  be used as an alternative to static site generators for building documentation
+  sites.
 ---
-# Why OpenSquiggly for Documentation?
+## Why OpenSquiggly for Documentation?
 
 Now might be a good time for a brief comparison with some other document formatting
 options. The biggest alternatives to OpenSquiggly are static site generators.
 
 Some examples of static site generators are:
 
+* Hugo
 * MkDocs
 * Sphinx
 * DocFX
@@ -25,7 +31,7 @@ content.
 
 What we're aiming for is a much more convenient set up and documentation publishing workflow.
 
-# Life without OpenSquiggly
+## Life without OpenSquiggly
 
 To highlight this last point, let's conduct a thought experiment of what it might be like
 to get your team to adopt a documentation initiative driven by a static site generator.
@@ -120,7 +126,7 @@ site up and running. Using an SSG is a viable option, but it is only one part of
 publishing pipeline and workflow. OpenSquiggly combines all of these steps into a single tool that can
 do the job.
 
-# Life with OpenSquiggly
+## Life with OpenSquiggly
 
 Let's take the same scerio now and add OpenSquiggly into the mix.
 
@@ -177,7 +183,7 @@ communication and coordination allows a "connecting of the dots" in ways never b
 
 Everyone lives happily everafter.
 
-# Summary
+## Summary
 
 |                                 | Without OpenSquiggly                        | With OpenSquiggly                                                                                                                                                                                               |
 |---------------------------------|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

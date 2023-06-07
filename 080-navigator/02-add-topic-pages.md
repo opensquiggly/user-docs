@@ -1,8 +1,10 @@
 ---
+weight: 20
 Order: 2
 Title: Adding New Topic Pages
+description: How to add new topic pages to OpenSquiggly.
 ---
-# Adding New Pages to the Bottom
+## Adding New Pages to the Bottom
 
 Whichever current document you are on, the navigator displays the list of child pages for
 that page.
@@ -35,7 +37,7 @@ To add a mapped page:
   reference the entire point point with a document tree, enter "/".
 * Press Add New to add the new mapped page to the bottom (last child) of the current page.
 
-# Adding a Child Page to a Specific Page
+## Adding a Child Page to a Specific Page
 
 To add a new child page to either the top or bottom of a specific page within the navigator,
 locate the page to which you want to add the new child page, and press the "..." elipsis
@@ -49,7 +51,7 @@ the desired page's subtree, depending on which menu item you selected.
 Enter the name of the page you wish to create and click the Add button, or click the Cancel
 button to cancel the operation and return to normal tree operation.
 
-# Adding a Sibling Page to a Specific Page
+## Adding a Sibling Page to a Specific Page
 
 A sibling page is a page that shares the same parent.
 

@@ -1,8 +1,10 @@
 ---
+weight: 30
 Order: 3
-Title: Regular Expressions Primar
+Title: Regular Expressions Primer
+description: An overview of how to use regular expressions to find patterns within your documents.
 ---
-# Very Basic Overview of Regular Expressions
+## Very Basic Overview of Regular Expressions
 
 If you are unfamiliar with regular expressions, review this documentation:
 

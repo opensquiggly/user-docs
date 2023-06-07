@@ -1,8 +1,10 @@
 ---
+weight: 50
 Order: 5
-Title: URL Pattern Macros 
+Title: Repo View Pattern Macros
+description: List of macros available for configure the viewing URL used when configuring mount points.
 ---
-# Overview
+## Overview
 In External Connections and Mount Points, as discussed in the previous sections, there
 are two special fields that are treated differently by the system: the Git Repo URL Pattern
 and Git View URL Pattern.
@@ -12,7 +14,7 @@ from another one of the fields in the record.
 
 Macros begin with the <code>$</code> character.
 
-# List of Macros
+## List of Macros
 
 <table>
   <tr>

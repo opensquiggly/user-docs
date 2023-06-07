@@ -1,8 +1,10 @@
 ---
+weight: 130
 order: 13
 Title: OAuth on Azure DevOps
+description: How to configure OpenSquiggly to use OAuth authentication for Azure DevOps.
 ---
-# About Azure DevOps
+## About Azure DevOps
 
 Azure DevOps, by Microsoft, is one of the Git hosting systems explicitly supported by OpenSquiggly.
 Once you've installed your OpenSquiggly instance, users can connect to their repositories on Azure DevOps
@@ -26,7 +28,7 @@ performed the setup and configured the cloud portal. However, the keys we use ar
 with the public, as that would defeat the purpose of OAuth authentication. Each private OpenSquiggly instance
 must be configured to use it's own private keys.
 
-# Configure Azure DevOps for OAuth
+## Configure Azure DevOps for OAuth
 
 1. Create an account and an organization on the Azure DevOps system by visiting https://dev.azure.com.
 2. With your account, register a new OAuth Application
@@ -87,11 +89,11 @@ must be configured to use it's own private keys.
    sudo systemctl restart opensquiggly
    ```
    
-# Videos
+## Videos
 
 In the following videos we set up and configure on OAuth registration for a fictitious company named WeegoSolar.
 
-## Part 1 : Creating the Application Registration
+### Part 1 : Creating the Application Registration
 
 <iframe 
   width="1024"
@@ -103,7 +105,7 @@ In the following videos we set up and configure on OAuth registration for a fict
   allowfullscreen>
 </iframe>
 
-## Part 2 : Configuring the OpenSquiggly Instance
+### Part 2 : Configuring the OpenSquiggly Instance
 
 <iframe 
   width="1024" 
@@ -115,7 +117,7 @@ In the following videos we set up and configure on OAuth registration for a fict
   allowfullscreen>
 </iframe>
 
-## Part 3 : User Demo
+### Part 3 : User Demo
 
 <iframe 
   width="1024"
@@ -127,7 +129,7 @@ In the following videos we set up and configure on OAuth registration for a fict
   allowfullscreen>
 </iframe>
 
-## Part 4 : User Verification and Revocation
+### Part 4 : User Verification and Revocation
 
 <iframe 
   width="1024" 

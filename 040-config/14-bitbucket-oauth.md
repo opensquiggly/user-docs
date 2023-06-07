@@ -1,8 +1,10 @@
 ---
+weight: 140
 order: 14
 Title: OAuth on Bitbucket
+description: How to configure OpenSquiggly to use OAuth authentication for Bitbucket Cloud.
 ---
-# About Bitbucket
+## About Bitbucket
 
 Bitbucket, by Atlassian, is one of the Git hosting systems explicitly supported by OpenSquiggly.
 Once you've installed your OpenSquiggly instance, users can connect to their repositories on Bitbucket
@@ -26,7 +28,7 @@ performed the setup and configured the cloud portal. However, the keys we use ar
 with the public, as that would defeat the purpose of OAuth authentication. Each private OpenSquiggly instance
 must be configured to use it's own private keys.
 
-# Configuring Bitbucket for OAuth
+## Configuring Bitbucket for OAuth
 
 1. Create an account and an organization on the Bitbucket system by visiting https://bitbucket.org.
 2. With your account, register a new OAuth Application
@@ -82,20 +84,20 @@ must be configured to use it's own private keys.
    sudo systemctl restart opensquiggly
    ```
    
-# Videos
+## Videos
 
-## Part 1 : Registering an OAuth Consumer
+### Part 1 : Registering an OAuth Consumer
 
 <iframe width="1024" height="854" src="https://www.loom.com/embed/75e4382fbe7249cabb2054d949fb309b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## Part 2 : Configuring Bitbucket OAuth
+### Part 2 : Configuring Bitbucket OAuth
 
 <iframe width="1024" height="802" src="https://www.loom.com/embed/39810e93a60c41a8ae0ae0b69410e68c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## Part 3 : Demo of Bitbucket OAuth
+### Part 3 : Demo of Bitbucket OAuth
 
 <iframe width="1024" height="854" src="https://www.loom.com/embed/b76ab7b0676b4e1b8b01e50056754b78" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## Part 4 : Viewing and Revoking Authorizations
+### Part 4 : Viewing and Revoking Authorizations
 
 <iframe width="1024" height="854" src="https://www.loom.com/embed/6b1bab56be2c495490d985b0c0631b6a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

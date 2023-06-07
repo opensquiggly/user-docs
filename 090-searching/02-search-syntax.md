@@ -1,8 +1,10 @@
 ---
+weight: 20
 Order: 2
 Title: Search Syntax
+description: An overview of the OpenSquiggly search syntax, including various options and filter settings that can be used.
 ---
-# Form of a Search Expression
+## Form of a Search Expression
 
 We recommend that you start by putting the regex pattern that you want to use to match
 the document content first, followed by any search filtering options:
@@ -46,7 +48,7 @@ The content search pattern must be contiguous.
                      bugs in this area and we're not currently catching this.                                              
 ```
 
-# Regular Expressions Pattern vs. Keyword Patterns
+## Regular Expressions Pattern vs. Keyword Patterns
 
 Currently all searches are interpreted as regular expressions, regardless of whether or
 not the ".*" button is checked (the little box immediately following the search input
@@ -55,7 +57,7 @@ in the header bar).
 Search test cases should be written assuming regex. We will need to revisit our search
 plans after we add keyword-based content searching.
 
-# List of Search Options
+## List of Search Options
 
 The following search options are available. Note that some options can be specified
 more than once. In these cases the options are cummulative and combined together
@@ -215,18 +217,18 @@ with an "and" boolean clause. I will discuss this momentarily.
 </table>
 
 
-# Case Sensitivity
+## Case Sensitivity
 
 If <code>case:yes</code> is specified, the content is searched with case sensitivity in effect. Otherwise,
 casing is ignored.
 
-# Maximum Count
+## Maximum Count
 
 Specifies the maximum number of documents to find. The default is 30. Note that if a larger number is
 specified, the search could take longer to complete. The user may want to increase the timeout setting
 in conjunction.
 
-# Document Type Inclusion or Exclusion
+## Document Type Inclusion or Exclusion
 
 <code>doctype:[page|repo]</code><br>
 <code>-doctype:[page|repo]</code>
@@ -234,7 +236,7 @@ in conjunction.
 With these options, you can narrow the search to include only pages (e.g., internally authored regular topic pages) or
 repository-based content (e.g., content from mount points).
 
-# Filename Inclusion or Exclusion
+## Filename Inclusion or Exclusion
 
 <code>file:regex_pattern</code><br>
 <code>-file:regex_pattern</code>
@@ -283,7 +285,7 @@ file:/components/ file:\.js$|\.svelte$
   
 ```
 
-# Repository Name Inclusion or Exclusion
+## Repository Name Inclusion or Exclusion
 
 <code>repo:regex_pattern</code><br>
 <code>-repo:regex_pattern</code>
@@ -302,14 +304,14 @@ As with the <code>file:regex_pattern</code> options, if multiple filters are spe
 combined together using the AND boolean condition (i.e., all conditions must be true, otherwise the
 document is discarded from the search results).
 
-# Title Inclusion or Exclusion
+## Title Inclusion or Exclusion
 
 <code>title:regex_pattern</code><br>
 <code>-title:regex_pattern</code>
 
 These options are synonmous with the <code>file:regex_pattern</code> filter.
 
-# Limiting the Number of Candidate Documents Searched
+## Limiting the Number of Candidate Documents Searched
 
 <code>maxscale:nnn</code>
 
@@ -396,7 +398,7 @@ Example:
 for\s{10}this maxscale:10 timeout:20
 ```
 
-# Maximum Document Size
+## Maximum Document Size
 
 <code>maxdocsize:nnn</code>
 
@@ -408,7 +410,7 @@ To speed up the search, by default we skip searching any documents that are bigg
 This is usually acceptable because developers generally try to keep their source code files to a few thousand
 lines long or less. If the user wants us to search large documents, they can increase the <code>maxdocsize</code>.
 
-# Include Skipped Documents Larger than the Maximum Size
+## Include Skipped Documents Larger than the Maximum Size
 
 <code>includeskipped:[yes|no]</code>
 
@@ -418,7 +420,7 @@ controls whether or not to include that skipped document in the result list.
 The default value is <code>no</code>, meaning that large documents are not included in the final returned
 results.
 
-# Setting the Search Timeout
+## Setting the Search Timeout
 
 <code>timeout:nnn</code>
 
@@ -436,7 +438,7 @@ Example:
 foreach count:1000 timeout:20
 ```
 
-# Finding Unreferenced pages
+## Finding Unreferenced pages
 
 <code>ref:none</code>
 

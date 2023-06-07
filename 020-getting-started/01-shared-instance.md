@@ -1,8 +1,13 @@
 ---
+weight: 10
 Order: 1
 Title: Public Portal
+description: >
+  This section gives an overview of our SaaS-based public (shared instance) portal. 
+  Please note that usage of the public portal is currently recommended only for
+  evaluation purposes.
 ---
-# For Evaluation Purposes Only
+## For Evaluation Purposes Only
 
 IMPORTANT: OUR CLOUD HOSTED SHARED PORTAL IS CURRENTLY RECOMMENDED FOR EVALUATION PURPOSES ONLY.
 
@@ -20,7 +25,7 @@ what is necessary to try out OpenSquiggly on your project.
 Once you've satisfied yourself that OpenSquiggly will work well for your team, please consider
 installing your own self-managed portal, or contact us about setting up a private portal.
 
-# Cloud Hosted Shared Portal
+## Cloud Hosted Shared Portal
 
 The fastest and easiest way for an individual user or small team of users to get started with OpenSquiggly
 is to sign up for an account at https://app.opensquiggly.com, our shared portal available for self-registration.
@@ -55,19 +60,19 @@ hosting option, we have utilities available to help you migrate your data to the
 Give our shared portal a chance, even if it's just to kick the tires and experiment with what the system
 can do for you.
 
-# Signing Up for a Cloud Hosted Account
+## Signing Up for a Cloud Hosted Account
 
 To create a user on the shared portal, simply visit https://app.opensquiggly.com and follow the sign up
 instructions.
 
-## Getting an Invitation Code
+### Getting an Invitation Code
 
 If the system is still on the early access plan when you sign up, you may be asked for an invitation code. 
 To receive an invitation code, click on the link in the sign in page and enter your e-mail address. Use the
 invitation code sent to your e-mail address to continue the sign up process. Be sure to check your spam
 folder for the invitation code to make sure your e-mail system didn't flag it for you.
 
-## Creating an Account
+### Creating an Account
 
 Once you have the invitation code, complete the sign up process by entering your e-mail address, login id,
 name, and password.
@@ -76,12 +81,12 @@ IMPORTANT: Be sure to remember and use your LOGIN ID when you sign in. Don't use
 login id - it won't work. The reason why we do it this way is because we allow you to create multiple accounts
 with the same e-mail address. Therefore, the LOGIN ID is the only thing that we can be sure is unique.
 
-## Signing In
+### Signing In
 
 After you've created your account, sign in using your LOGIN ID and PASSWORD. From here you'll be taken to your
 Home page, which is the root page from which you navigate to all your documents.
 
-## Resetting Forgotten Passwords
+### Resetting Forgotten Passwords
 
 If you've forgotten your password, click on the "Forgot your password" link near the bottom of the
 sign in form.
@@ -94,7 +99,7 @@ You will receive an e-mail containing a link to reset your password. Click on th
 password, and a second time to confirm it. After resetting your password, go back to the sign in page and
 login with your login id and new password.
 
-# Next Steps
+## Next Steps
 
 Initially your Home Page will be completely empty until you add documents to your navigator, but it doesn't need
 to stay that way for very long. Because we allow you to quickly connect your account to source code repositories
@@ -119,5 +124,3 @@ That should be enough to get you out of the starting gate and using OpenSquiggly
 OpenSquiggly with an eye for making life better for software developers. We sincerely hope that you enjoy 
 using OpenSquiggly and can begin using it to do your best work and make positive impacts on your projects
 and for your customers.
-
-

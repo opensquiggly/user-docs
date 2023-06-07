@@ -1,8 +1,10 @@
 ---
+weight: 10
 Order: 1
 Title: Overview of the Navigator
+description: This section provides an overview and purpose of the OpenSquiggly navigator use to navigate and view pages.
 ---
-# The Navigator and Your Document Tree
+## The Navigator and Your Document Tree
 
 The Navigator pane, located along the left-hand side of OpenSquiggly, is how you will build
 and organize your document tree.

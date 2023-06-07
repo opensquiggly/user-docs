@@ -1,6 +1,8 @@
 ---
+weight: 80
 order: 8
 Title: "Kubernetes : Amazon"
+description: How to install OpenSquiggly on Amazon's Elastic Kubernetes Service (EKS).
 ---
 # Overview of Installing on EKS
 

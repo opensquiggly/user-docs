@@ -1,8 +1,10 @@
 ---
+weight: 10
 order: 1
 title: Overview
+description: Overview of options regarding self-deploying your own instance of OpenSquiggly.
 ---
-# Self-Managed Private Portals
+## Self-Managed Private Portals
 
 For those organizations that need full control over their computing servers and network resources, either
 for security or cost reasons, we offer self-managed private portals.
@@ -12,7 +14,7 @@ install the software yourself on your own resources, either in your own self-man
 Amazon AWS, Microsoft Azure, Google Cloud, Digital Ocean, Linode, or on your own physical servers manged
 by your organization on a private corporate network.
 
-# Deployment Options
+## Deployment Options
 
 We currently offer setup scripts, documentation, and walk-through videos for installing OpenSquiggly
 onto a virtual machine in the five popular cloud providers listed above. Within this virtual machine
@@ -26,7 +28,7 @@ space. In our experience, this setup should scale to support all but the largest
 We are also working on multi-node options and plan to offer Kubernetes support in the future for
 those that need the ultimate in high-availability and high-scalability.
 
-# Considerations
+## Considerations
 
 When sizing your deployment, the main considerations should be:
 

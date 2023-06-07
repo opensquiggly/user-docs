@@ -1,8 +1,10 @@
 ---
+weight: 40
 order: 4
 Title: "VM Install : Digital Ocean"
+description: How to install OpenSquiggly on a Digital Ocean droplet.
 ---
-# Overview of Installing on Digital Ocean
+## Overview of Installing on Digital Ocean
 
 We've provided a quick setup script that makes it easy to configure your disk space and
 install dependencies on a Digital Ocean Droplet.
@@ -16,7 +18,7 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 1 : Creating a Droplet
+## Part 1 : Creating a Droplet
 
 ### Steps to Complete
 1. Log into your Digital Ocean cloud portal.
@@ -45,7 +47,7 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 2 : Running the Setup Script
+## Part 2 : Running the Setup Script
 
 ### Steps to Complete
 1. SSH into the VM
@@ -95,7 +97,7 @@ In this section, you'll complete the following steps:
 
 <hr>
 
-# Part 3 : Post-Installation Testing
+## Part 3 : Post-Installation Testing
 
 ### Steps to Complete
 2. From your browser, navigate to the IP address DNS address where you VM is registered.
@@ -119,5 +121,3 @@ In this section, you'll complete the following steps:
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
-
-
