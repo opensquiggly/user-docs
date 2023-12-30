@@ -1,5 +1,6 @@
 ---
 weight: 140
+url: /docs/config/oauth/bitbucket
 order: 14
 Title: OAuth on Bitbucket
 description: How to configure OpenSquiggly to use OAuth authentication for Bitbucket Cloud.

@@ -1,5 +1,6 @@
 ---
 weight: 50
+url: /docs/self-hosted/vm/google
 order: 5
 Title: "VM Install : Google"
 description: How to install OpenSquiggly on a Google Cloud virtual machine.

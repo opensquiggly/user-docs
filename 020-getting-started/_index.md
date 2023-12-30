@@ -1,5 +1,6 @@
 ---
 weight: 20
+url: /docs/getting-started
 Order: 2
 Title: Getting started
 description: >

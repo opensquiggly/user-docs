@@ -1,5 +1,6 @@
 ---
 weight: 120
+url: /docs/config/email
 order: 12
 Title: E-Mail Configuration
 description: How to configure OpenSquiggly to send e-mail notifications.

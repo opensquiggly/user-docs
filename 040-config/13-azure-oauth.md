@@ -1,5 +1,6 @@
 ---
 weight: 130
+url: /docs/config/oauth/azure-devops
 order: 13
 Title: OAuth on Azure DevOps
 description: How to configure OpenSquiggly to use OAuth authentication for Azure DevOps.

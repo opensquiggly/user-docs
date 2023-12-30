@@ -1,5 +1,6 @@
 ---
 weight: 50
+url: /docs/mount-points/source-repos
 Title: Mounting Source Repos
 Order: 5
 description: >

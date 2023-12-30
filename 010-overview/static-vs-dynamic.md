@@ -1,5 +1,6 @@
 ---
 weight: 30
+url: /docs/overview/ssgs
 Title: Alternatives
 Order: 3
 description: >

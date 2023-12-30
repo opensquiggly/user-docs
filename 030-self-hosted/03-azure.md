@@ -1,5 +1,6 @@
 ---
 weight: 30
+url: /docs/self-hosted/vm/azure
 order: 3
 title: "VM Install : Azure"
 description: How to install OpenSquiggly on an Azure virtual machine.

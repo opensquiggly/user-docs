@@ -1,5 +1,6 @@
 ---
 weight: 20
+url: /docs/getting-started/private-portals
 Order: 2
 Title: Private Portals
 description: >

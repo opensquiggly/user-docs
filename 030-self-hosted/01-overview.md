@@ -1,5 +1,6 @@
 ---
 weight: 10
+url: /docs/self-hosted/overview
 order: 1
 title: Overview
 description: Overview of options regarding self-deploying your own instance of OpenSquiggly.

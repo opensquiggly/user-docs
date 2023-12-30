@@ -1,5 +1,6 @@
 ---
 weight: 110
+url: /docs/self-hosted/k8s/google
 order: 11
 Title: "Kubernetes : Google"
 description: How to install OpenSquiggly on Google Kubernetes Engine (GKE).

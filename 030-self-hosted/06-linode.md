@@ -1,5 +1,6 @@
 ---
 weight: 60
+url: /docs/self-hosted/vm/linode
 order: 6
 Title: "VM Install : Linode"
 description: How to install OpenSquiggly on Linode.

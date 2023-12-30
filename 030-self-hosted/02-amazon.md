@@ -1,5 +1,6 @@
 ---
 weight: 20
+url: /docs/self-hosted/vm/aws
 order: 2
 Title: "VM Install : Amazon"
 description: How to install OpenSquiggly on an Amazon AWS instance.
@@ -42,10 +43,22 @@ In this section, you'll complete the following steps:
 8. Click Launch Instance, and wait for the Instance to be provisioned
 
 ### Video of Creating AWS Instance
+<!--
 <iframe 
   width="1024" 
   height="818" 
   src="https://www.loom.com/embed/a77001cca1504b00a8995d1bf9da8df6" 
+  frameborder="0" 
+  webkitallowfullscreen 
+  mozallowfullscreen 
+  allowfullscreen>
+</iframe>
+-->
+
+<iframe 
+  width="1024" 
+  height="818" 
+  src="https://www.youtube.com/embed/W9mF3b9uwK8?si=XbZtE7yZlWoxJFHI" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 

@@ -1,5 +1,6 @@
 ---
 weight: 70
+url: /docs/self-hosted/kubernetes
 order: 7
 Title: Installing on Kubernetes
 description: >

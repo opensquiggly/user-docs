@@ -1,5 +1,6 @@
 ---
 weight: 40
+url: /docs/self-hosted/vm/digital-ocean
 order: 4
 Title: "VM Install : Digital Ocean"
 description: How to install OpenSquiggly on a Digital Ocean droplet.

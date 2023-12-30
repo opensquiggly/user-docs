@@ -1,5 +1,6 @@
 ---
 weight: 90
+url: /docs/self-hosted/k8s/azure
 order: 9
 Title: "Kubernetes : Azure"
 descripton: How to install OpenSquiggly on Microsoft's Azure Kubernetes Service (AKS).

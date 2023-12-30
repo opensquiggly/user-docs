@@ -1,5 +1,6 @@
 ---
 weight: 160
+url: /docs/config/oauth/gitlab
 order: 16
 Title: OAuth on GitLab
 description: How to configure OpenSquiggly to use OAuth authentication for GitLab.

@@ -1,5 +1,6 @@
 ---
 weight: 30
+url: /docs/mount-points/private-repos
 Order: 3
 Title: Mounting Private Repos
 description: How to connect to private Git repositories.

@@ -1,5 +1,6 @@
 ---
 weight: 10
+url: /docs/mount-points/types
 Order: 1
 Title: Repo Types & Formats
 description: Overview of connecting external repositories to your OpenSquiggly account.

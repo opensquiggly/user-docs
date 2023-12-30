@@ -1,5 +1,6 @@
 ---
 weight: 10
+url: /docs/getting-started/public-portal
 Order: 1
 Title: Public Portal
 description: >

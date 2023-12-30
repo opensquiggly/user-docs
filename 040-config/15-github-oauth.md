@@ -1,5 +1,6 @@
 ---
 weight: 150
+url: /docs/config/oauth/github
 order: 15
 Title: OAuth on GitHub
 description: How to configure OpenSquiggly to use OAuth authentication for GitHub.

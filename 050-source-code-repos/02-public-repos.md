@@ -1,5 +1,6 @@
 ---
 weight: 20
+url: /docs/mount-points/public-repos
 Order: 2
 Title: Mounting Public Repos
 description: How to connect to public Git repositories.
