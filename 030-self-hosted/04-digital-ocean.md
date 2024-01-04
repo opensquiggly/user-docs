@@ -39,12 +39,18 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.loom.com/embed/8a6527282649452a9e8761e85dfd4988" 
+  src="https://www.youtube.com/embed/_ygIizbpe7A" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=_ygIizbpe7A" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
 
 <hr>
 
@@ -52,33 +58,33 @@ In this section, you'll complete the following steps:
 
 ### Steps to Complete
 1. SSH into the VM
-   ```
+   ```bash
    ssh ubuntu@your_droplet_address
    ```
 2. Change to the /opt folder
-   ```
+   ```bash
    cd /opt
    ```
 3. Install unzip
-   ```
+   ```bash
    sudo apt update
    sudo apt install unzip
    ```
 4. Retrieve the Application Files. Visit the OpenSquiggly website at https://opensquiggly.com for
    the latest download instructions which have have changed since this document was published.
-   ```
+   ```bash
    sudo wget http://files.opensquiggly.com/opensquiggly.latest.zip
-   ```
+   ```bash
 5. Unzip the file
-   ```
+   ```bash
    sudo unzip opensquiggly.latest.zip -d OpenSquiggly
    ```
 6. Change to the /opt/OpenSquiggly/setup folder
-   ```
+   ```bash
    cd /opt/OpenSquiggly/setup
    ```
 7. Invoke the setup script.
-   ```
+   ```bash
    sudo bash digitalocean-setup.sh
    ```
 8. Follow the setup instructions and enter the information when prompted. Please see the
@@ -89,12 +95,18 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.loom.com/embed/3b57d73586f64cd59cceddef218f4b4b" 
+  src="https://www.youtube.com/embed/NZd4GhKat38" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=NZd4GhKat38" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
 
 <hr>
 
@@ -116,9 +128,15 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.loom.com/embed/ff93d10cbfcd4a609f10a419744d5455" 
+  src="https://www.youtube.com/embed/JAF2vXhh7JA" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=JAF2vXhh7JA" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
