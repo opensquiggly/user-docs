@@ -53,9 +53,11 @@ In this section, you'll complete the following steps:
   allowfullscreen>
 </iframe>
 
-<ul>
-  <li><a href="https://www.youtube.com/watch?v=W9mF3b9uwK8" target="_blank">Open Video in YouTube</a></li>
-<ul>  
+<div>
+   <ul>
+     <li><a href="https://www.youtube.com/watch?v=W9mF3b9uwK8" target="_blank">Open Video in YouTube</a></li>
+   <ul> 
+</div 
 
 <hr>
 
@@ -107,9 +109,11 @@ In this section, you'll complete the following steps:
   allowfullscreen>
 </iframe>
 
-<ul>
-  <li><a href="https://www.youtube.com/watch?v=Qu4Y3chIFTE" target="_blank">Open Video in YouTube</a></li>
-<ul>  
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=Qu4Y3chIFTE" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
 
 <hr>
 
@@ -131,7 +135,7 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.youtube.com/embed7x9-mpE3N50" 
+  src="https://www.youtube.com/embed/7x9-mpE3N50" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
@@ -141,3 +145,4 @@ In this section, you'll complete the following steps:
 <ul>
   <li><a href="https://www.youtube.com/watch?v=7x9-mpE3N50" target="_blank">Open Video in YouTube</a></li>
 <ul>  
+<br>
