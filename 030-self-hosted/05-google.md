@@ -38,12 +38,18 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.loom.com/embed/f44170f793524c788e94764a6f5daa97" 
+  src="https://www.youtube.com/embed/zAEL0MwrfRo" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=zAEL0MwrfRo" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
 
 <hr>
 
@@ -85,12 +91,18 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="756" 
-  src="https://www.loom.com/embed/11cd2aeb63e94091a5fd748824f8808f" 
+  src="https://www.youtube.com/embed/SIHhhuYXK_8" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=SIHhhuYXK_8" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
 
 <hr>
 
@@ -112,9 +124,15 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.loom.com/embed/b910cc7c6e09471c9cf1bd5e61705b61" 
+  src="https://www.youtube.com/embed/WCfmmHexWxg" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=WCfmmHexWxg" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
