@@ -72,12 +72,18 @@ Not available yet. Please check back later.
 <iframe
   width="1024"
   height="800"
-  src="https://www.loom.com/embed/fa111a415dd044b283939d396f142371"
+  src="https://www.youtube.com/embed/FU_ZjQWD8mQ"
   frameborder="0"
   webkitallowfullscreen
   mozallowfullscreen
   allowfullscreen>
 </iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=FU_ZjQWD8mQ" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
 
 <hr>
 
@@ -120,12 +126,18 @@ Not available yet. Please check back later.
 <iframe
   width="1024"
   height="778"
-  src="https://www.loom.com/embed/5b55c2204bc4469796b42982abfa6f49"
+  src="https://www.youtube.com/embed/HWsj8nkJ4v8"
   frameborder="0"
   webkitallowfullscreen
   mozallowfullscreen
   allowfullscreen>
 </iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=HWsj8nkJ4v8" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
 
 <hr>
 
@@ -146,10 +158,15 @@ Not available yet. Please check back later.
 <iframe
   width="1024"
   height="840"
-  src="https://www.loom.com/embed/0977d4e58f2e4eb193e758fbe96889c5"
+  src="https://www.youtube.com/embed/5gpRCLTK_cQ"
   frameborder="0"
   webkitallowfullscreen
   mozallowfullscreen
   allowfullscreen>
 </iframe>
 
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=5gpRCLTK_cQ" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
