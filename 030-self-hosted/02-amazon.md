@@ -100,7 +100,7 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.youtube.com/watch?v=Qu4Y3chIFTE" 
+  src="https://www.youtube.com/embed/Qu4Y3chIFTE" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
@@ -131,7 +131,7 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.youtube.com/watch?v=7x9-mpE3N50" 
+  src="https://www.youtube.com/embed7x9-mpE3N50" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
