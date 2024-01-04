@@ -154,4 +154,10 @@ Hit the IP address with your browser and that should take you to the OpenSquiggl
 
 ### Video of Installing with Helm
 
-<iframe width="1024" height="795" src="https://www.loom.com/embed/bb167e75db3848fd9f4e98f578cb0d13" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe width="1024" height="795" src="https://www.youtube.com/embed/YdVtCwnj2jk" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=YdVtCwnj2jk" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
