@@ -113,16 +113,16 @@ In this section, you'll complete the following steps:
 ## Part 3 : Post-Installation Testing
 
 ### Steps to Complete
-2. From your browser, navigate to the IP address DNS address where you VM is registered.
-3. Click the "Create account" button and create a new account.
-4. Login with your login id and password.
-5. Enter some content in the home page.
-6. Enter a search phrase in the search bar and hit <Enter>. Verify that the correct
+1. From your browser, navigate to the IP address DNS address where you VM is registered.
+2. Click the "Create account" button and create a new account.
+3. Login with your login id and password.
+4. Enter some content in the home page.
+5. Enter a search phrase in the search bar and hit <Enter>. Verify that the correct
    page(s) are returned.
-7. Mount one or more repositories and graft them into your document tree.
-8. Try searching for some content in your repositories to verify that the search is
+6. Mount one or more repositories and graft them into your document tree.
+7. Try searching for some content in your repositories to verify that the search is
    working.
-9. Experiment with the Navigator to arrange your document tree to your liking.
+8. Experiment with the Navigator to arrange your document tree to your liking.
 
 ### Video
 <iframe 
