@@ -100,12 +100,16 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.loom.com/embed/19d179773d614e17a2818855e4792f8f" 
+  src="https://www.youtube.com/watch?v=Qu4Y3chIFTE" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=Qu4Y3chIFTE" target="_blank">Open Video in YouTube</a></li>
+<ul>  
 
 <hr>
 
@@ -127,9 +131,13 @@ In this section, you'll complete the following steps:
 <iframe 
   width="1024" 
   height="818" 
-  src="https://www.loom.com/embed/4c5511d5e31e4e95a2070f72a53cec75" 
+  src="https://www.youtube.com/watch?v=7x9-mpE3N50" 
   frameborder="0" 
   webkitallowfullscreen 
   mozallowfullscreen 
   allowfullscreen>
 </iframe>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=7x9-mpE3N50" target="_blank">Open Video in YouTube</a></li>
+<ul>  
