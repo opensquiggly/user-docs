@@ -46,8 +46,8 @@ up with the Agile Manifesto:
 
 ## Where Did We Go Wrong?
 
-Sadly, I think the state of affairs at an average software project in corporate America looks very different from the
-quaint notion that the Agile Manifesto authors had in mind in 2001. Things are much messier in the world today. 
+Sadly, I think the state of affairs at an average software project in corporate America today looks very different from the
+quaint notion that the Agile Manifesto authors had in mind in 2001. Things are much messier in the world now. 
 Consider the current context that can be found in practically any software project in the world:
 
 * The team is scattered in multiple locations around the world.
@@ -67,7 +67,7 @@ If I had to pick a single word that summed up all the challenges that face a mod
 needed then in the industry are new techniques and tools for dealing with this massive increase in complexity.
 
 It's not that I think the Agile Manifesto is wrong per se, but I just don't think it offers much in the way of guidance about
-how to manage a modern, large software project, replete with the massive layers of complexity that I mentioned. Sometimes,
+how to manage a modern, large software project, replete with the massive layers of complexity that I mentioned above. Sometimes,
 in my darker moments of reflection, I think that if the American nuclear defense system were engineered the way we write
 software today, we would have blown ourselves to Kingdom Come long ago.
 
@@ -86,11 +86,11 @@ we shouldn't write documentation at all, but it does downplay it, and in many ca
 anti-documentation philosophy too far.
 
 Let's break this down a little. First, I think the kinds of documentation the authors were referring to is very different
-from the kinds of documentation and documentation workflows that we are espousing with OpenSquiggly. What they were talking
+from the kinds of documentation that we are espousing with OpenSquiggly. What they were talking
 about are those big-design-up-front, multi-volumed specification documents that were written before any software was written 
 at all, that attempted to describe, in the minutest detail, every last aspect of the behavior of the software. That doesn't 
-work for commercial, for-profit software development. Perhaps government agencies and highly-regulated industries still need
-to work that way, but that approach is too slow for fast-moving commercial software development.
+usually work in commercial, for-profit software development projects. Perhaps government agencies and highly-regulated 
+industries still need to work that way, but that approach is too slow for fast-moving commercial software development.
 
 We're talking about something different. What we're talking about is the as-you-go type of architecture documents, diagrams, 
 reference documents, code narratives, and other technical errata that you should maintain alongside your source code, 
@@ -149,11 +149,12 @@ to reading through the source code. Having source code and documentation live si
 this type of workflow.
 
 You might ask, why not just view the source code in your favorite IDE? Obviously you can do that if it happens to be
-the source code that you have cloned to your local repo and loaded up in your IDE at the moment. But what if the code
-is in a repository that you don't normally work with? Or what you don't even know the repository exists? What if you
-want to look up some code from another group to see how they solved a particular problem? I've worked in organizations
-that had thousands upon thousands of repositories - I can't clone them all locally. OpenSquiggly can be a common environment
-that has instant access to all of the repositories around the organization.
+the source code that you have work with on a daily basis. But what if the code is in a repository that you don't normally 
+work with? Or what if the code you need lives in a repository that you don't even know exists? Sleuthing for source code 
+is sometimes a little bit like what they say about pornagrapy ... I can' describe it exactly, but I'll know it when
+I see it. What if you want to look up some code from another group to see how they solved a particular problem? 
+I've worked in organizations that had thousands upon thousands of repositories - I can't clone them all locally. OpenSquiggly 
+can be a common environment that has instant access to all of the repositories around the organization.
 
 ### Reference Documentation Support
 
@@ -164,7 +165,7 @@ from the actual textual content, you can mix-and-match reference documentation g
 DocFX, Sandcastle, etc., and merge reference documentation generated from different tools into a single, unified hosting
 environment.
 
-My observation is that other wikis on the market don't do a good job of letting you mix in reference documentation
+Other corporate wikis on the market don't do a good job of letting you mix in reference documentation
 generated from the code structure, and since this is an important feature for developers, we wanted to bake these
 capabilities into the platform.
 
@@ -185,13 +186,14 @@ To help you do that, we've built in some nice code searching capabilities that c
 your repositories and documentation all at once. We support regular expression-based searching, which is great
 for searching for patterns in the code, and we provide a extensive set of include/exclude filtering conditions
 that let you easily search for specific files, repositories, and other conditions to help you narrow down your
-search to exactly what you're looking for.
+search to exactly what you're looking for. Read the chapter on "Searching" for more details on how to create
+very specific filtering conditions.
 
 ### And Even More
 
 As you use OpenSquiggly you'll discover more features and more nuances to the product that we haven't explicitly
 covered here. And of course, we're always working hard to add more relevant functionality to the product.
 
-The end result we're aiming for is a product that let's developers curate, index, organize, customize, annotate,
+The end result we're aiming for is a product that lets developers curate, index, organize, customize, annotate,
 tag, search, save, bookmark, take notes, write code narratives and walkthroughs, and share their research results with
 others in the organization.
