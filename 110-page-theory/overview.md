@@ -14,7 +14,7 @@ paradigm. OpenSquiggly is driven by a unified theory of content organization. Th
 provides a highly flexible framework for organizing content that can accommodate a large
 variety of real world situations.
 
-As we have emphasized previously, OpenSquiggly is heavily informed by that target market
+As we have emphasized previously, OpenSquiggly is heavily informed by the target market
 it hopes to serve, namely, software development teams, and by the perceived use cases needed
 by our customers. However, at its heart, OpenSquiggly is more than that. In this chapter
 we discuss the theory of the OpenSquiggly paradigm.
