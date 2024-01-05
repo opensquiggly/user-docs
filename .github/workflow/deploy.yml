@@ -1,0 +1,7 @@
+jobs:
+  trigger-workflow:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger opensquiggy.com.xp to build
+      run: |
+        curl -XPOST -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/opensquiggly/opensquiggly.com.xp/dispatches" -d '{"event_type": "trigger-event"}'
