@@ -1,3 +1,14 @@
+name: Deploy to Static Azure Web App
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+
 jobs:
   trigger-workflow:
     runs-on: ubuntu-latest
