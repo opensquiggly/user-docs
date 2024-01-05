@@ -1,5 +1,6 @@
 ---
 weight: 80
+url: /docs/mount-points/navigator
 Title: Managing the Document Tree
 Order: 8
 description: >

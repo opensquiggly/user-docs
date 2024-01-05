@@ -1,6 +1,7 @@
 ---
 weight: 30
 Order: 3
+url: /docs/mount-points/doc-authoring/fragments
 Title: Multi-Fragment Documents
 description: Describes how content within OpenSquiggly pages are broken into smaller fragments.
 ---

@@ -1,6 +1,7 @@
 ---
 weight: 10
 Order: 1
+url: /docs/mount-points/doc-authoring/overview
 Title: Overview
 description: An overview of how to uses pages within OpenSquiggly as a wiki to author documentation.
 ---

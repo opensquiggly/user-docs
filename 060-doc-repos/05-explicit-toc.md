@@ -1,6 +1,7 @@
 ---
 weight: 50
 Order: 5
+url: /docs/mount-points/doc-repos/explicit-toc
 Title: Explicit Table of Contents
 description: >
   This section discusses how you can control the table of contents by explicitly

@@ -1,6 +1,7 @@
 ---
 weight: 40
 Order: 4
+url: /docs/mount-points/doc-authoring/workflow
 Title: Page Editing Workflow
 description: This section describes the general workflow for editing pages and the various actions the user can perform.
 ---

@@ -1,6 +1,7 @@
 ---
 weight: 30
 Order: 3
+url: /docs/mount-points/doc-repos/reusing
 Title: Reusing Mount Points
 description: >
   In this section we discuss how you can reuse mount points to create different

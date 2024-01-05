@@ -1,6 +1,7 @@
 ---
 weight: 70
 Order: 7
+url: /docs/mount-points/doc-authoring
 Title: Authoring Documents
 description: >
   How to author documents within the OpenSquiggly portal. This works very similarly to

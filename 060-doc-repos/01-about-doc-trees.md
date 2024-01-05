@@ -1,6 +1,7 @@
 ---
 weight: 10
 Order: 1
+url: /docs/mount-points/doc-repos/intro
 Title: The Doc Formatter
 description: >
   This section discusses how document formatters are used to filter and format the

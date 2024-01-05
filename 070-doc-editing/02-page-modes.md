@@ -1,6 +1,7 @@
 ---
 weight: 20
 Order: 2
+url: /docs/mount-points/doc-authoring/page-modes
 Title: Page Modes
 description: >
   A brief discussion of the three page modes: view, edit, and edit page options.

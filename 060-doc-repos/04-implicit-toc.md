@@ -1,6 +1,7 @@
 ---
 weight: 40
 Order: 4
+url: /docs/mount-points/doc-repos/implicit-toc
 Title: Implicit Table of Contents
 description: >
   This section discusses how OpenSquiggly can create a table of contents implicitly

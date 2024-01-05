@@ -1,6 +1,7 @@
 ---
 weight: 20
 Order: 2
+url: /docs/mount-points/doc-repos/ssgs
 Title: Compared with Static Sites
 description: >
   In this section we compare how OpenSquiggly's built-in document formatter can
