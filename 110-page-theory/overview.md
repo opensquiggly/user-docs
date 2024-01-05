@@ -12,19 +12,24 @@ of how to use OpenSquiggly.
 In this chapter, we delve into the less tangible, theortical aspects of the OpenSquiggly
 paradigm. OpenSquiggly is driven by a unified theory of content organization. This paradigm
 provides a highly flexible framework for organizing content that can accommodate a large
-variety of real world situations.
+variety of real world scenarios.
 
 As we have emphasized previously, OpenSquiggly is heavily informed by the target market
 it hopes to serve, namely, software development teams, and by the perceived use cases needed
-by our customers. However, at its heart, OpenSquiggly is more than that. In this chapter
+by those users. However, at its heart, OpenSquiggly is more than that. In this chapter
 we discuss the theory of the OpenSquiggly paradigm.
 
 ## Pages as the Primary Unit of Content
 
-All content viewed with OpenSquiggly is done through the use of pages.
+All content viewed with OpenSquiggly is done through the use of ***pages***.
 
-There are three types of pages that we need to understand from a testing persective, as each type
-of page has various characteristics that need to be exercised in our test plans.
+Each page contains a list of table of content entries (TocEntries) and a list of snippets.
+The manner by which the TocEntries and snippets are retrieved and/or generated is determined
+by the type of the page. In some cases, the TocEntries and snippets are physical entities,
+stored and retrieved in the database, but in other cases, they are virtual entities that are
+dynamically generated.
+
+There are three types of pages:
 
 * Regular Topic Pages
 * Mapped Topic Pages (most of the time referred to simply as "Mapped Pages")
@@ -33,12 +38,15 @@ of page has various characteristics that need to be exercised in our test plans.
 ### Regular Topic Pages
 
 Regular topic pages are physical entities that are stored as records in the TopicPages collection in the
-database. These topic pages contain a list of table of contents entries that refer to other pages, and
+database. These topic pages contain a list of TocEntries that refer to other pages, and
 a list of snippets that comprise the content of the page.
 
 Snippets are self-contained, generally small, pieces of content that can be placed on a page. When a page
 is rendered, the system reads all the snippets that belong to the page, and renders them vertically down
 the page surface from top to bottom.
+
+In the case of regular topic pages, both the list of TocEntries and the list of snippets are physically
+stored as entities in the database.
 
 The page structure in OpenSquiggly is not strictly hierarchical as one might be familiar with in an
 operating system file system. Pages can be referred to by multiple pages, and therefore existing at
