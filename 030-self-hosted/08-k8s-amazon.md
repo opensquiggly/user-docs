@@ -38,3 +38,44 @@ There are so many EKS configuration options, that our videos and documents will 
 able to cover the very basics, so once again, if you have advanced requirements, particularly
 around security concerns, please reach out to your company's cloud engineering team if possible.
 
+# Links to Helpful Resources
+
+For additional information on EKS, you may find these links helpful:
+
+* <a href="https://docs.aws.amazon.com/eks/" target="_blank">EKS Documentation by Amazon</a>
+* <a href="https://www.youtube.com/watch?v=pNECqaxyewQ" target="_blank">eksctl - How to Create and Manage AWS EKS clusters by DevOps Toolkit</a>
+* <a href="https://www.youtube.com/watch?v=p6xDCz00TxU" target="_blank">AWS EKS - Create Kubernetes cluster on Amazon EKS | the easy way by TechWorld with Nana</a>
+* <a href="https://www.youtube.com/watch?v=CukYk43agA4" target="_blank">AWS EKS Tutorial | What is EKS? | EKS Explained by KodeKloud</a>
+
+There are numerous other videos and resources on YouTube and the Web which can easily be found by searching. The links above should give you a good start.
+
+# Part 1 : Creating the EKS Cluster
+
+There are four main ways to create an EKS cluster.
+
+* Use the AWS Web UI Portal
+* Use the AWS Console
+* Use the ```eksctl``` command line program
+* Use an Infrastructure as Code solution such as Terraform or Pulumi
+
+If you watched any of the above videos, then you'll know that using the ```eksctl``` program has
+the unanimous consensus of being the fastest and easiest way to create an EKS cluster, and so that
+is what we will use in this section.
+
+In progress. Please check back later.
+
+# Part 2 : Connecting kubectl to EKS
+
+In progress. Please check back later.
+
+# Part 3 : Setting up Helm
+
+In progress. Please check back later.
+
+# Part 4 : Create a Kubernetes Namespace (Optional)
+
+In progress. Please check back later.
+
+# Part 5 : Installing OpenSquiggly with Helm
+
+In progress. Please check back later.
