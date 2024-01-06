@@ -39,9 +39,25 @@ In this document, you'll complete the following steps:
    * We recommend leaving the SSH public key radio button selected
 5. Click the Create button to start the provisioning process.
 6. Download the private key using the popup window that will appear.
+7. Go to the newly created VM resource, go to the Disks section, and add an Azure Disk.
+   See below video for more details.
 
 ### Video
-Not available yet. Please check back later.
+<iframe
+  width="1024"
+  height="800"
+  src="https://www.youtube.com/embed/vFN9wQN0lLg"
+  frameborder="0"
+  webkitallowfullscreen
+  mozallowfullscreen
+  allowfullscreen>
+</iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=vFN9wQN0lLg" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
 
 <hr>
 
