@@ -1,6 +1,7 @@
 ---
 weight: 40
 Order: 4
+url: /docs/navigator/add-mapped-pages
 Title: Mapping Pages to Mount Points
 description: How to add pages that map to and reference content within mount points.
 ---

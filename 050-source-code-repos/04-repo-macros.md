@@ -1,6 +1,7 @@
 ---
 weight: 40
 Order: 4
+url: /doc/mount-points/repo-url-pattern-macros
 Title: Repo URL Pattern Macros
 description: List of macros available for configure the cloning URL used when configuring mount points.
 ---

@@ -1,6 +1,7 @@
 ---
 weight: 70
 Order: 7
+url: /docs/navigator/drill-into-pages
 Title: Drilling Into Pages
 description: For a more focused view of a subset of pages, this section describes how you can drill into pages.
 ---

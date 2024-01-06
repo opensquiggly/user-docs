@@ -1,6 +1,7 @@
 ---
 weight: 20
 Order: 2
+url: /docs/navigator/add-topic-pages
 Title: Adding New Topic Pages
 description: How to add new topic pages to OpenSquiggly.
 ---

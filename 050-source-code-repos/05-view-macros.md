@@ -1,6 +1,7 @@
 ---
 weight: 50
 Order: 5
+url: /doc/mount-points/repo-view-pattern-macros
 Title: Repo View Pattern Macros
 description: List of macros available for configure the viewing URL used when configuring mount points.
 ---

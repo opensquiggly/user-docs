@@ -18,10 +18,10 @@ Amazon's EKS, being from Amazon, is undoubtedly the most popular managed Kuberne
 service on the market. If your company already uses Amazon as its main cloud provider,
 then of course you're going to be drawn towards using it.
 
-Beware, however, that EKS is also one of the more complex and difficult to create and
+Be aware, however, that EKS is also one of the more complex and difficult to
 configure Kubernetes systems on the market, and so you'll want to be prepared for some
 learning and some effort in the process. If you have access to a cloud engineering team
-that you can go to fo advice and guidance within your company, then we highly suggest
+that you can go to for advice and guidance within your company, then we highly suggest
 reaching out to those resources.
 
 If you aren't sure you really want to use EKS, don't have access to an internal cloud

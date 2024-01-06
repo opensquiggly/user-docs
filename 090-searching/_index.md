@@ -1,5 +1,6 @@
 ---
 weight: 90
+url: /docs/mount-points/navigator/aadd-mapped-pages
 Title: Searching Files
 Order: 9
 description: >

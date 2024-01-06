@@ -1,6 +1,7 @@
 ---
 weight: 30
 Order: 3
+url: /docs/navigator/add-existing-pages
 Title: Add Existing Pages
 ---
 ## Why Add an Existing Page

@@ -1,6 +1,7 @@
 ---
 weight: 60
 Order: 6
+url: /docs/navigator/remove-and-recover-pages
 Title: Removing & Recovering Pages
 description: How to remove pages and recover pages after they've been removed.
 ---

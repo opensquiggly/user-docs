@@ -1,6 +1,7 @@
 ---
 weight: 50
 Order: 5
+url: /docs/navigator/move-and-copy-pages
 Title: Moving & Copying Pages
 description: How to move and copy pages to different locations in the document tree.
 ---

@@ -1,7 +1,7 @@
 ---
 weight: 10
 Order: 1
-url: /docs/mount-points/navigator/overview
+url: /docs/navigator/overview
 Title: Overview of the Navigator
 description: This section provides an overview and purpose of the OpenSquiggly navigator use to navigate and view pages.
 ---
