@@ -24,12 +24,17 @@ learning and some effort in the process. If you have access to a cloud engineeri
 that you can go to for advice and guidance within your company, then we highly suggest
 reaching out to those resources.
 
+If you're lucky enough to work for a company that is forward-thinking enough to deploy
+an all-company Kubernetes cluster, then you can just piggyback your OpenSquiggly install
+on top of the company's existing cluster. In that case, all you need to do is a couple
+short configuration steps to connect your local ```kubectl``` command to the existing cluster.
+
 If you aren't sure you really want to use EKS, don't have access to an internal cloud
 engineering team, or work for a smaller company that may not need everything that Amazon
 and EKS has to offer, then you might want to consider going with a simpler Kubernetes
 provider such as Linode or Digital Ocean, which we also have documented in this chapter.
 
 There are so many EKS configuration options, that our videos and documents will only be
-able to cover the very basics, so once again, if you have advanced requirements please
-reach out to your company's cloud engineering team if possible.
+able to cover the very basics, so once again, if you have advanced requirements, particularly
+around security concerns, please reach out to your company's cloud engineering team if possible.
 
