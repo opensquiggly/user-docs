@@ -28,7 +28,8 @@ in the prior sections, or a Kubernetes cluster, there are several factors to con
 1. *__Fewer Installation Steps__*: While Kubernetes brings with it a learning curve and some
    some added complexity, you may actually find it easier and faster to install OpenSquiggly
    on Kubernetes because the Helm chats we provide making it possible to install OpenSquiggly
-   with a single command.
+   with a single command. This is especially true if your company already has an existing Kubernetes
+   cluster that you can connect to with your ```kubectl``` command line.
 
 2. *__Managing External Disks__*: Kubernetes' usage of persistent volumes and persistent volume
    claims, along with dynamic provisioning, makes it easier to add external disk space to your

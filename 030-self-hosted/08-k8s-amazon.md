@@ -42,10 +42,13 @@ around security concerns, please reach out to your company's cloud engineering t
 
 For additional information on EKS, you may find these links helpful:
 
-* <a href="https://docs.aws.amazon.com/eks/" target="_blank">EKS Documentation by Amazon</a>
-* <a href="https://www.youtube.com/watch?v=pNECqaxyewQ" target="_blank">eksctl - How to Create and Manage AWS EKS clusters by DevOps Toolkit</a>
-* <a href="https://www.youtube.com/watch?v=p6xDCz00TxU" target="_blank">AWS EKS - Create Kubernetes cluster on Amazon EKS | the easy way by TechWorld with Nana</a>
-* <a href="https://www.youtube.com/watch?v=CukYk43agA4" target="_blank">AWS EKS Tutorial | What is EKS? | EKS Explained by KodeKloud</a>
+* <a href="https://docs.aws.amazon.com/eks/" target="_blank">EKS Documentation (by Amazon)</a>
+* <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">Install or update the latest version of the AWS CLI (by Amazon)</a>
+* <a href="https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-eksctl.html" target="_blank">Install eksctl (by Amazon)</a>
+* <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html" target="_blank">Getting started with Amazon EKS – eksctl (by Amazon)</a>
+* <a href="https://www.youtube.com/watch?v=pNECqaxyewQ" target="_blank">eksctl - How to Create and Manage AWS EKS clusters (by DevOps Toolkit)</a>
+* <a href="https://www.youtube.com/watch?v=p6xDCz00TxU" target="_blank">AWS EKS - Create Kubernetes cluster on Amazon EKS | the easy way (by TechWorld with Nana)</a>
+* <a href="https://www.youtube.com/watch?v=CukYk43agA4" target="_blank">AWS EKS Tutorial | What is EKS? | EKS Explained (by KodeKloud)</a>
 
 There are numerous other videos and resources on YouTube and the Web which can easily be found by searching. The links above should give you a good start.
 
