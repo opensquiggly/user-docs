@@ -145,16 +145,15 @@ of your project.
 Besides bringing formatted documents into your document tree, you can also bring in the actual source code of your
 project or your project's dependencies. This gives you a unified environment for perusing and searching your documentation
 and source code together. This is important because if the documentation you need doesn't exist, you can resort
-to reading through the source code. Having source code and documentation live side-by-side in one hosting system supports 
+to reading through the source code. Having source code and documentation living side-by-side in one hosting system supports 
 this type of workflow.
 
-You might ask, why not just view the source code in your favorite IDE? Obviously you can do that if it happens to be
-the source code that you have work with on a daily basis. But what if the code is in a repository that you don't normally 
-work with? Or what if the code you need lives in a repository that you don't even know exists? Sleuthing for source code 
-is sometimes a little bit like what they say about pornagrapy ... I can' describe it exactly, but I'll know it when
-I see it. What if you want to look up some code from another group to see how they solved a particular problem? 
-I've worked in organizations that had thousands upon thousands of repositories - I can't clone them all locally. OpenSquiggly 
-can be a common environment that has instant access to all of the repositories around the organization.
+You might ask, why not just view the source code in your favorite IDE? If it's the main project repository you work with
+on a daily basis, that works fine. But developers are often dealing with many other ancillary repositories that provide external
+libraries, subsystems supplied by other groups, plugins, microservices, etc. There might also be times where you want to
+peruse projects from other teams just to see how they solved a particular problem. Having access to all the company's
+repositories in a unified system where all the source code can be easily explored and searched from one place helps to
+breakdown communication barriers and facilitate synergistic problem solving.
 
 ### Reference Documentation Support
 
