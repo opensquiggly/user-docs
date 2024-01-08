@@ -49,32 +49,109 @@ For additional information on EKS, you may find these links helpful:
 * <a href="https://www.youtube.com/watch?v=pNECqaxyewQ" target="_blank">eksctl - How to Create and Manage AWS EKS clusters (by DevOps Toolkit)</a>
 * <a href="https://www.youtube.com/watch?v=p6xDCz00TxU" target="_blank">AWS EKS - Create Kubernetes cluster on Amazon EKS | the easy way (by TechWorld with Nana)</a>
 * <a href="https://www.youtube.com/watch?v=CukYk43agA4" target="_blank">AWS EKS Tutorial | What is EKS? | EKS Explained (by KodeKloud)</a>
+* <a href="https://aws.amazon.com/blogs/opensource/weaveworks-and-aws-joining-forces-to-maintain-open-source-eksctl/" target="_blank">Weaveworks and AWS Joining Forces to Maintain 
+Open Source eksctl</a>
+* <a href="https://eksctl.io/usage/schema/" target="_blank">Config file schema for eksctl (for advanced usage of eksctl)</a>
 
 There are numerous other videos and resources on YouTube and the Web which can easily be found by searching. The links above should give you a good start.
 
-## Part 1 : Creating the EKS Cluster
+<hr>
 
-There are four main ways to create an EKS cluster.
+## Part 1 : Installing & Configuring Prerequisites
 
-* Use the AWS Web UI Portal
-* Use the AWS Console
-* Use the ```eksctl``` command line program
+There are many ways to create an EKS cluster, including:
+
+* Get your cloud engineering team to do it for you
+* Use the AWS Console (i.e., the web portal)
+* Use the ```aws``` CLI
+* Use the ```eksctl``` command utility with command line parameters
+* Use the ```eksctl``` command utility with a configuration file
 * Use an Infrastructure as Code solution such as Terraform or Pulumi
 
-If you watched any of the above videos, then you'll know that using the ```eksctl``` program has
-the unanimous consensus of being the fastest and easiest way to create an EKS cluster, and so that
-is what we will use in this section.
+In these instructions we'll be using ```eksctl``` with command line parameters to create a very basic cluster
+with default settings. This is only intended as a demo and a starting point.
 
 1. If you have not already done so, install the ```aws``` CLI using the instructions <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">here<a>. 
 2. Install ```eksctl``` CLI using the instructions <a href="https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-eksctl.html" target="_blank">here.</a>
+3. Install ```kubectl``` and ```helm``` per the instructions <a href="/docs/self-hosted/kubernetes/#installing-kubectl">here</a>.
+4. *Important*: The AWS username that you use to create the cluster must have a role with the AmazonEKSClusterPolicy attached. Without such a role, you will get a 
+   permissions error when attempting to create the cluster.
+   1. Login to the AWS Console
+   2. In the console's search bar, search for "IAM" (which stands for Identity and Access Management)
+   3. Navigate to the Roles section.
+   4. Follow the steps to create a new role.
+   5. Attach the AmazonEKSClusterPolicy to the role.
+   6. Apply the role to the user account.
+5. You'll also need to create an access key associated with the AWS account that you're using. 
 
 In progress. Please check back later.
 
-## Part 2 : Connecting kubectl to EKS
+<hr>
 
-In progress. Please check back later.
+## Part 2 : Creating the EKS Cluster
 
-## Part 3 : Setting up Helm
+1. Use ```eksctl``` to initiate the cluster creation process using the command:
+   ```
+   eksctl create cluster --name your-cluster-name-here [--region your-region-name]
+   ```
+   Example:
+   ```
+   eksctl create cluster --name awscluster1 --region us-east-2
+   ```
+   Note: If you omit the region, it defaults to the setting specified in your ~/.aws/config file.
+2. If everything is configured properly, you should start seeing messages on the screen regarding
+   the cluster creation process, such as:
+   ```
+   2024-01-08 16:00:21 [ℹ]  eksctl version 0.167.0
+   2024-01-08 16:00:21 [ℹ]  using region us-east-2
+   2024-01-08 16:00:22 [ℹ]  setting availability zones to [us-east-2b us-east-2a us-east-2c]
+   2024-01-08 16:00:22 [ℹ]  subnets for us-east-2b - public:192.168.0.0/19 private:192.168.96.0/19
+   2024-01-08 16:00:22 [ℹ]  subnets for us-east-2a - public:192.168.32.0/19 private:192.168.128.0/19
+   2024-01-08 16:00:22 [ℹ]  subnets for us-east-2c - public:192.168.64.0/19 private:192.168.160.0/19
+   2024-01-08 16:00:22 [ℹ]  nodegroup "ng-357e2d8e" will use "" [AmazonLinux2/1.27]
+   2024-01-08 16:00:22 [ℹ]  using Kubernetes version 1.27
+   2024-01-08 16:00:22 [ℹ]  creating EKS cluster "awscluster1" in "us-east-2" region with managed nodes
+   2024-01-08 16:00:22 [ℹ]  will create 2 separate CloudFormation stacks for cluster itself and the initial managed nodegroup
+   .
+   . (... etc ...)
+   . 
+   ```
+3. In our testing, it usually takes about 15-20 minutes for the cluster to be created, so be patient.   
+
+<hr>
+
+## Part 3 : Connecting kubectl to EKS
+
+After the cluster is created, the ```eksctl``` program should have modified your kube configuration file
+(typically stored at ```~/.kube/config``` or in any locations specified by the ```KUBECONFIG```) environment
+variable.
+
+To ensure that ```kubectl``` is configured to connect to the cluster, issue the command:
+
+```
+kubectl config current-context
+```
+
+You should see the newly created cluster in the list and it should be selected as the default.
+
+To see a list of all contexts, use the command:
+
+```
+kubectl config get-contexts
+```
+
+To change the current context to a different default, use the command:
+
+```
+kubectl config use-context context-name-here
+```
+
+<hr>
+
+## Part 4 : Setting up Helm
+
+Once you've ensured that your ```kubectl``` context is pointing to your newly created cluster,
+you can proceed with running ```helm``` to install OpenSquiggly.
 
 View your current helm repos with:
 
@@ -89,7 +166,9 @@ command:
 helm repo add opensquiggly https://opensquiggly.github.io/helm-charts
 ```
 
-## Part 4 : Create a Kubernetes Namespace (Optional)
+<hr>
+
+## Part 5 : Create a Kubernetes Namespace (Optional)
 
 It's a good idea to create a namespace to contain your OpenSquiggly resources that will
 be installed by the Helm charts. This keeps your resources isolated from any other resources
@@ -116,7 +195,9 @@ kubectl get all
 
 and verify that the namespace contains no existing resources.
 
-## Part 5 : Installing OpenSquiggly with Helm
+<hr>
+
+## Part 6 : Installing OpenSquiggly with Helm
 
 ```bash
 helm install your-helm-relelase-name-here opensquiggly/allinone --set cloudType=aws[,diskSize=xx]
