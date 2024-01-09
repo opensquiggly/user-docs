@@ -117,9 +117,31 @@ with default settings. This is only intended as a demo and a starting point.
    ```bash
    aws configure list
    ```  
+10. Confirm your ```eksctl``` command is configured correctly using:
+    ```bash
+    eksctl get clusters
+    ```
+    and ensure that there are no error messages.
 
 If everything looks good and you're not receiving any error messages, you should be ready to proceed with
 creating the cluster.    
+
+### Video
+<iframe 
+  width="1024" 
+  height="818" 
+  src="https://www.youtube.com/embed/4EDqlVaGLGE" 
+  frameborder="0" 
+  webkitallowfullscreen 
+  mozallowfullscreen 
+  allowfullscreen>
+</iframe>
+
+<div>
+   <ul>
+     <li><a href="https://www.youtube.com/watch?v=4EDqlVaGLGE" target="_blank">Open Video in YouTube</a></li>
+   <ul> 
+</div 
 
 <hr>
 
@@ -168,6 +190,13 @@ kubectl config current-context
 ```
 
 You should see the newly created cluster in the list and it should be selected as the default.
+
+If you did not create the cluster using ```eksctl```, then you will need to set your kube config context
+separately. To do this, use the followign command:
+
+```bash
+aws eks update-kubeconfig --name <cluster-name> [--region <region>]
+```
 
 To see a list of all contexts, use the command:
 
