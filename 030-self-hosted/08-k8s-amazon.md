@@ -2,7 +2,7 @@
 weight: 80
 url: /docs/self-hosted/k8s/aws
 order: 8
-Title: "Kubernetes : Amazon"
+Title: "Kubernetes : Amazon AWS"
 description: How to install OpenSquiggly on Amazon's Elastic Kubernetes Service (EKS).
 ---
 ## Overview of Installing on EKS
@@ -82,26 +82,61 @@ with default settings. This is only intended as a demo and a starting point.
    4. Follow the steps to create a new role.
    5. Attach the AmazonEKSClusterPolicy to the role.
    6. Apply the role to the user account.
-5. You'll also need to create an access key associated with the AWS account that you're using. 
+5. You'll also need to create an access key associated with the AWS account that you're using. You can then use the access key
+   id and the secret access key in your environment variable or ~/.aws/config file. Follow these steps;
+   1. From the AWS Console, click on the username dropdown in the upper-right corner, and select "Security credentials"
+      from the list.
+   2. Scroll down to the "Access keys" section and click the "Create access key" button, and confirm any prompts given.
+      If you're logged in as the root user, the system will warn you about best practices, but will still let you
+      create an access key.
+   3. Retrieve the generated access key id and the secret access key and store it in a secure location such as a password
+      vault. Note that you will not be able to retrieve the secret access key after closing the window.
+6. In your command line environment, set the access key id using one of the following methods:<br>
+   To store the value in your ~/.aws/configure file do:
+   ```bash
+   aws configure set access_key access-key-id-goes-here
+   ```
+   OR, to store the value in your environment variables do:<br>
+   ```bash
+   export AWS_ACCESS_KEY_ID=access-key-id-goes-here
+   ```
+7. In your command line environment, set the secret access key using one of the following methods:<br>
+   To store the value in your ~/.aws/configure file do:
+   ```bash
+   aws configure set secret_key secret-access-key-goes-here
+   ```
+   OR, to store the value in your environment variables do:<br>
+   ```bash
+   export AWS_SECRET_ACCESS_KEY=secret-access-key-goes-here
+   ```
+8. Set a default AWS region using:
+   ```bash
+   aws configure set region region-name-here
+   ```   
+9. Confirm your configuration settings with the command:
+   ```bash
+   aws configure list
+   ```  
 
-In progress. Please check back later.
+If everything looks good and you're not receiving any error messages, you should be ready to proceed with
+creating the cluster.    
 
 <hr>
 
 ## Part 2 : Creating the EKS Cluster
 
 1. Use ```eksctl``` to initiate the cluster creation process using the command:
-   ```
+   ```bash
    eksctl create cluster --name your-cluster-name-here [--region your-region-name]
    ```
    Example:
-   ```
+   ```bash
    eksctl create cluster --name awscluster1 --region us-east-2
    ```
    Note: If you omit the region, it defaults to the setting specified in your ~/.aws/config file.
 2. If everything is configured properly, you should start seeing messages on the screen regarding
    the cluster creation process, such as:
-   ```
+   ```bash
    2024-01-08 16:00:21 [ℹ]  eksctl version 0.167.0
    2024-01-08 16:00:21 [ℹ]  using region us-east-2
    2024-01-08 16:00:22 [ℹ]  setting availability zones to [us-east-2b us-east-2a us-east-2c]
@@ -128,7 +163,7 @@ variable.
 
 To ensure that ```kubectl``` is configured to connect to the cluster, issue the command:
 
-```
+```bash
 kubectl config current-context
 ```
 
@@ -136,13 +171,13 @@ You should see the newly created cluster in the list and it should be selected a
 
 To see a list of all contexts, use the command:
 
-```
+```bash
 kubectl config get-contexts
 ```
 
 To change the current context to a different default, use the command:
 
-```
+```bash
 kubectl config use-context context-name-here
 ```
 
