@@ -175,6 +175,23 @@ creating the cluster.
    ```
 3. In our testing, it usually takes about 15-20 minutes for the cluster to be created, so be patient.   
 
+### Video
+<iframe 
+  width="1024" 
+  height="818" 
+  src="https://www.youtube.com/embed/U_z-4hjsqP4" 
+  frameborder="0" 
+  webkitallowfullscreen 
+  mozallowfullscreen 
+  allowfullscreen>
+</iframe>
+
+<div>
+   <ul>
+     <li><a href="https://www.youtube.com/watch?v=U_z-4hjsqP4" target="_blank">Open Video in YouTube</a></li>
+   <ul> 
+</div 
+
 <hr>
 
 ## Part 3 : Connecting kubectl to EKS
