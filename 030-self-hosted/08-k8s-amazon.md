@@ -342,7 +342,7 @@ and verify that the namespace contains no existing resources.
 ## Part 7 : Installing OpenSquiggly with Helm
 
 ```bash
-helm install your-helm-relelase-name-here opensquiggly/allinone --set cloudType=aws[,diskSize=xx]
+helm install your-helm-release-name-here opensquiggly/allinone --set cloudType=aws[,diskSize=xx]
 ```
 
 Helm release names can contain alphanumeric characters and the hyphen.
@@ -376,7 +376,7 @@ helm install opensquiggly-test1 opensquiggly/allinone --set cloudType=aws,diskSi
    <ul> 
 </div 
 
-### Testing the Install
+## Testing the Install
 
 Ensure that the pod has started by issuing the command:
 
