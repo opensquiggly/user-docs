@@ -359,6 +359,23 @@ helm install opensquiggly-test1 opensquiggly/allinone --set cloudType=aws
 helm install opensquiggly-test1 opensquiggly/allinone --set cloudType=aws,diskSize=100
 ```
 
+### Video
+<iframe 
+  width="1024" 
+  height="818" 
+  src="https://www.youtube.com/embed/TRLuEEojlBc" 
+  frameborder="0" 
+  webkitallowfullscreen 
+  mozallowfullscreen 
+  allowfullscreen>
+</iframe>
+
+<div>
+   <ul>
+     <li><a href="https://www.youtube.com/watch?v=TRLuEEojlBc" target="_blank">Open Video in YouTube</a></li>
+   <ul> 
+</div 
+
 ### Testing the Install
 
 Ensure that the pod has started by issuing the command:
