@@ -211,6 +211,10 @@ driver before we run the Helm chart.
 
 For additional documentation, see <a href="https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html">Amazon EBS CSI driver</a>.
 
+1. Associate the OIDC provider with your cluster with:
+   ```bash
+   eksctl utils associate-iam-oidc-provider --cluster=your-cluster-name-here --approve [--region=your-region-name-here]
+   ```
 1. First, create an IAM role with the following command:
    ```bash
    eksctl create iamserviceaccount \
