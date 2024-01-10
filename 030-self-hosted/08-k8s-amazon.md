@@ -194,7 +194,64 @@ creating the cluster.
 
 <hr>
 
-## Part 3 : Connecting kubectl to EKS
+## Part 3 : Configuring the Elastic Block Store CSI Driver
+
+Now that the cluster is created, we're *almost* ready to run the ```helm``` command to install the OpenSquiggly
+Helm chart. But, we've got one more step to do. While many other Kubernetes services on the market come with
+a pre-installed block storage system and an associated CSI driver 
+(<a href="https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/">Container Storage Interface</a>),
+this is an add-on feature for EKS, and we need to install it separately.
+
+The purpose of the block storage CSI driver with respect to OpenSquiggly is the auto-provisioning of the disk
+space that OpenSquiggly uses for logs, databases, indexes, and repository cloning.
+
+Without the EBS CSI driver, OpenSquiggly's Helm chart will get "stuck" at the point in the spin up process where
+it tries to create the persistent volume and wait for it to be ready. Therefore, we need to install the CSI
+driver before we run the Helm chart.
+
+For additional documentation, see <a href="https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html">Amazon EBS CSI driver</a>.
+
+1. First, create an IAM role with the following command:
+   ```bash
+   eksctl create iamserviceaccount \
+     --name ebs-csi-controller-sa \
+     --namespace kube-system \
+     --cluster your-cluster-name-here \            <----- The name of your cluster goes on this line
+     --role-name AmazonEKS_EBS_CSI_DriverRole \    <----- You can name the role as you choose, this is the suggested name
+     --role-only \
+     --attach-policy-arn arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy \
+     --approve
+   ```
+   Here is a one-line version for easier copy/pasting:
+   ```bash
+   eksctl create iamserviceaccount --name ebs-csi-controller-sa --namespace kube-system --cluster your-cluster-name-here --role-name AmazonEKS_EBS_CSI_DriverRole --role-only --attach-policy-arn arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy --approve   
+   ```
+2. Create the ```eksctl``` addon for the CSI driver:
+   ```bash
+   eksctl create addon \
+     --name aws-ebs-csi-driver \
+     --cluster your-cluster-name-here \
+     --service-account-role-arn arn:aws:iam::111122223333:role/AmazonEKS_EBS_CSI_DriverRole \
+                                             ------------      ----------------------------
+                                                 ^                          ^
+                                                 |                          |
+         Your account id  -----------------------+                          |
+                                                                            |
+                   The name of the role you specified previously -----------+
+     --force
+   ```
+   Here is a one-line version for easier copy/pasting:
+   ```bash
+   eksctl create addon --name aws-ebs-csi-driver --cluster your-cluster-name-here --service-account-role-arn arn:aws:iam::111122223333:role/AmazonEKS_EBS_CSI_DriverRole --force   
+   ```
+   If needed, you can retrieve your account id by logging into the AWS Console and clicking on your account name in the upper-right corner
+   in the menu bar.
+3. Verify the CSI addon was successfully created using:
+   ```bash
+   eksctl get addon --name aws-ebs-csi-driver --cluster your-cluster-name-here 
+   ```   
+
+## Part 4 : Connecting kubectl to EKS
 
 After the cluster is created, the ```eksctl``` program should have modified your kube configuration file
 (typically stored at ```~/.kube/config``` or in any locations specified by the ```KUBECONFIG```) environment
@@ -229,7 +286,7 @@ kubectl config use-context context-name-here
 
 <hr>
 
-## Part 4 : Setting up Helm
+## Part 5 : Setting up Helm
 
 Once you've ensured that your ```kubectl``` context is pointing to your newly created cluster,
 you can proceed with running ```helm``` to install OpenSquiggly.
@@ -249,7 +306,7 @@ helm repo add opensquiggly https://opensquiggly.github.io/helm-charts
 
 <hr>
 
-## Part 5 : Create a Kubernetes Namespace (Optional)
+## Part 6 : Create a Kubernetes Namespace (Optional)
 
 It's a good idea to create a namespace to contain your OpenSquiggly resources that will
 be installed by the Helm charts. This keeps your resources isolated from any other resources
@@ -278,7 +335,7 @@ and verify that the namespace contains no existing resources.
 
 <hr>
 
-## Part 6 : Installing OpenSquiggly with Helm
+## Part 7 : Installing OpenSquiggly with Helm
 
 ```bash
 helm install your-helm-relelase-name-here opensquiggly/allinone --set cloudType=aws[,diskSize=xx]
