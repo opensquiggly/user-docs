@@ -253,7 +253,26 @@ For additional documentation, see <a href="https://docs.aws.amazon.com/eks/lates
 3. Verify the CSI addon was successfully created using:
    ```bash
    eksctl get addon --name aws-ebs-csi-driver --cluster your-cluster-name-here 
-   ```   
+   ```  
+
+### Video
+<iframe 
+  width="1024" 
+  height="818" 
+  src="https://www.youtube.com/embed/VGuB2oCCDkg" 
+  frameborder="0" 
+  webkitallowfullscreen 
+  mozallowfullscreen 
+  allowfullscreen>
+</iframe>
+
+<div>
+   <ul>
+     <li><a href="https://www.youtube.com/watch?v=VGuB2oCCDkg" target="_blank">Open Video in YouTube</a></li>
+   <ul> 
+</div>
+
+<hr>
 
 ## Part 4 : Connecting kubectl to EKS
 
