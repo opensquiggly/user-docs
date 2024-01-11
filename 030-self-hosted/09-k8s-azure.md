@@ -16,7 +16,38 @@ relevant to AKS.
 
 ## Part 1 : Creating the AKS Cluster
 
-TODO
+### Steps to Complete
+
+1. Visit your Azure Portal at https://portal.azure.com and login to your Azure account.
+2. In the search box, search for "Kubernetes services", and select it from the list.
+3. Click the Create button near the top left portion of the portal, and choose the "Create a Kubernetes cluster"
+   option from the dropdown list.
+4. Under the Basics tab, fill in the desired parameters for the VM:
+   * Subscription
+   * Resource Group
+   * Enter a cluster name
+   * Pick one of the preset configurations (Production Standard, Dev/Test, etc.)
+   * Review any of the other options you may wish to change, or leave the defaults selected
+5. To set advanced options, navigate to the Node pools, Networking, Integrations, Monitoring,
+   Advanced, or Tags tabs.
+6. When you've finished reviewing all of your options, click the "Review + create" button to start the provisioning process.
+
+### Video
+<iframe 
+  width="1024" 
+  height="818" 
+  src="https://www.youtube.com/embed/ZAYrg92wRzw" 
+  frameborder="0" 
+  webkitallowfullscreen 
+  mozallowfullscreen 
+  allowfullscreen>
+</iframe>
+
+<div>
+   <ul>
+     <li><a href="https://www.youtube.com/watch?v=ZAYrg92wRzw" target="_blank">Open Video in YouTube</a></li>
+   <ul> 
+</div>
 
 <hr>
 
