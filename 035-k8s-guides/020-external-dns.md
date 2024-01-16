@@ -66,6 +66,53 @@ To do this on Kubernetes, we need to install ExternalDNS on your cluster.
 
 ## Installing ExternalDNS
 
-### Steps to Complete
+To install ExternalDNS on your cluster, you'll need to follow the specific steps for your
+DNS name server provider. Each provider is a little different. In each case, you need to
+retrieve some kind of connection credential that will allow the ExternalDNS service running
+on your Kubernetes cluster to create DNS records on the DNS name server.
 
-TODO
+A full list of tutorials can be found <a href="https://github.com/kubernetes-sigs/external-dns/tree/master/docs/tutorials" target="_blank">here</a>.
+
+Here is a partial list of some of the more commonly used DNS name server providers. Note that the cloud provider that provides your DNS name server
+doesn't necessarily need to be the same cloud provider as that provides your Kubernetes cluster. For example, you can create a Kubernetes
+cluster on Linode and let the DNS names be managed by Azure. Be sure to read the instructions corresponding to the cloud service that provides
+your DNS server, not your Kubernetes cluster.
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tutorial Link</th>
+  </tr>
+  <tr>
+    <td>AWS</td>
+    <td><a href="https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/aws.md" target="_blank">https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/aws.md</a></td>
+  </tr>
+  <tr>
+    <td>Azure</td>
+    <td><a href="https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/azure.md" target="_blank">https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/azure.md</a></td>
+  </tr>  
+  <tr>
+    <td>Civo</td>
+    <td><a href="https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/civo.md" target="_blank">https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/civo.md</a></td>
+  </tr>    
+  <tr>
+    <td>CloudFlare</td>
+    <td><a href="https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/cloudflare.md" target="_blank">https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/cloudflare.md</a></td>
+  </tr>   
+  <tr>
+    <td>DigitalOcean</td>
+    <td><a href="https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/digitalocean.md" target="_blank">https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/digitalocean.md</a></td>
+  </tr> 
+  <tr>
+    <td>GoDaddy</td>
+    <td><a href="https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/godaddy.md" target="_blank">https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/godaddy.md</a></td>
+  </tr>   
+  <tr>
+    <td>Google</td>
+    <td><a href="https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/gke.md" target="_blank">https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/gke.md</a></td>
+  </tr> 
+  <tr>
+    <td>Linode</td>
+    <td><a href="https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/linode.md" target="_blank">https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/linode.md</a></td>
+  </tr>          
+</table>  
