@@ -28,6 +28,42 @@ an associated DNS record on your behalf.
 
 To do this on Kubernetes, we need to install ExternalDNS on your cluster.
 
+## Overview Videos
+
+### The missing piece - Kubernetes ExternalDNS by Lachlan Evenson
+<iframe
+  width="1024"
+  height="800"
+  src="https://www.youtube.com/embed/9HQ2XgL9YVI"
+  frameborder="0"
+  webkitallowfullscreen
+  mozallowfullscreen
+  allowfullscreen>
+</iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=9HQ2XgL9YVI" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
+
+### External DNS for Kubernetes by Houssem Dellai
+<iframe
+  width="1024"
+  height="800"
+  src="https://www.youtube.com/embed/VSn6DPKIhM8"
+  frameborder="0"
+  webkitallowfullscreen
+  mozallowfullscreen
+  allowfullscreen>
+</iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=VSn6DPKIhM8" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
+
 ## Installing ExternalDNS
 
 ### Steps to Complete
