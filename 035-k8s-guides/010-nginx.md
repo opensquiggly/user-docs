@@ -20,6 +20,15 @@ for a quick evaluation setup. However, if you decide you want to continue to use
 OpenSquiggly for your team, you'll want to move away from hard-coded IP address
 so that teams can access the instance via a bona fide DNS name.
 
+In Kubernetes, the way to accomplish this is by installing an ingress controller.
+The ingress controller provides a way to map an inbound domain name to your
+Kubernetes service.
+
+There are various ingress controllers available. The NGINX ingress controller is 
+one of the most commonly used, and we discuss how to use it in this document.
+
+
+
 ## Install the NGINX Controller using Helm
 
 There are multiple ways to install the NGINX ingress controller, but for the purposes
