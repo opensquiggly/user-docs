@@ -27,7 +27,7 @@ This file is referenced by an environment variable named KUBECONFIG.
 
 The kubeconfig file can contain contexts for multiple Kubernetes clusters. It
 is often the case when using the command line tools provided by cloud vendors
-(for example, ```aws``` from Amazon, ```az``` from Microsoft Azure, and ```glcoud``` from Google)
+(for example, ```aws``` from Amazon, ```az``` from Microsoft Azure, and ```gcloud``` from Google)
 that the kubeconfig file will be automatically updated and new configuration from
 newly created contexts can be merged into it by the CLI.
 
