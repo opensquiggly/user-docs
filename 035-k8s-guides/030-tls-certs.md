@@ -75,13 +75,13 @@ https support, add the following parameters to your helm install command:
 
 * tlsSecretName="secret-name-here"
 * exposeWith=nginx
-* hostname="your.company.com"
+* dnsHostName="your.company.com"
 
 Example:
 
 ```bash
 helm install opensquiggly-test1 opensquiggly/allinone --set \
-  cloudType=azure,diskSize=30,exposeWith=nginx,tlsSecretName=mycertsecret,hostname="opensquiggly-test1.yourcompany.com"
+  cloudType=azure,diskSize=30,exposeWith=nginx,tlsSecretName=mycertsecret,dnsHostName="opensquiggly-test1.yourcompany.com"
 ```
 
 Assuming you followed the instructions for setting up ExternalDNS, OpenSquiggly should be installed and a
