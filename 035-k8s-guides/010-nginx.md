@@ -5,20 +5,20 @@ Order: 1
 Title: Custom Domain Names with NGINX
 description: >
   How to install an NGINX ingress controller in your Kubernetes cluster
-  so that you can configure you OpenSquiggly instance to use custom
+  so that you can configure your OpenSquiggly instance to use custom
   domain names.
 ---
 
 ## Introduction
 
-In the quick setup guides give in the Self-Hosted chapter, we should you how
-to expose your OpenSquiggly instance using a Load Balancer and a hard-coded IP
-address.
+In the quick setup guides presented in the [Self-Hosted](/docs/self-hosted/) chapter, 
+we showed you how to expose your OpenSquiggly instance using a Load Balancer and a 
+hard-coded IP address.
 
 We provided these instructions to give you a very fast way to configure OpenSquiggly
-for a quick evaluation setup. However, if you decide you want to continue to use
-OpenSquiggly for your team, you'll want to move away from hard-coded IP address
-so that teams can access the instance via a bona fide DNS name.
+for a quick evaluation setup. However, once you decide to continue to use
+OpenSquiggly for your team in a production environment, you'll want to migrate away
+from hard-coded IP address so that teams can access the instance via a bona fide DNS name.
 
 In Kubernetes, the way to accomplish this is by installing an ingress controller.
 The ingress controller provides a way to map an inbound domain name to your
@@ -92,12 +92,14 @@ prefers an alternate installation method.
    ```       
    which should display an output list such as:
    ```bash
-   NAME    CONTROLLER             PARAMETERS   AGE
-   nginx   k8s.io/ingress-nginx   <none>       29m
-   -----
-     ^
-     |
-     +------ This is the name you will use in later steps to expose the OpenSquiggly service
+     NAME    CONTROLLER             PARAMETERS   AGE
+     nginx   k8s.io/ingress-nginx   <none>       29m
+   # -----
+   #   ^
+   #   |
+   #   +------ This is the name you will use in later steps to expose the OpenSquiggly service.
+   #           In the OpenSquiggly "allinone" Helm chart, use this value for the "exposeWith"
+   #           parameter.
    ```
 7. Assuming you installed the ingress controller into the suggested namespace "ingress-nginx", use
    the following command to determine the external IP address of the associated Load Balancer that
@@ -112,6 +114,6 @@ prefers an alternate installation method.
    ingress-nginx-controller             LoadBalancer   10.43.103.33   131.153.226.147   80:30544/TCP,443:31551/TCP   34m
    ```
    In the above example, we see the NGINX ingress controler is available on the external IP address "131.152.226.147".
-   We can now create DNS names, either manually or automatically using ExternalDNS, and users should be able to
-   access services on the cluster that are exposed via the ingress controller.
+   We can now create DNS names, either manually or [automatically using ExternalDNS](/docs/k8s-guides/external-dns), and 
+   users should be able to access services on the cluster that are exposed via the ingress controller.
 

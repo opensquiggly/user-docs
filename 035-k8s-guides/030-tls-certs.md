@@ -11,7 +11,7 @@ description: >
 ## Introduction
 
 If you want to expose your OpenSquiggly instance via https instead of
-just http, then you need to obtain an TLS certificate and give our 
+just http, then you need to obtain a TLS certificate and give your 
 Kubernetes cluster access to it.
 
 ## Options
@@ -74,7 +74,8 @@ To use the TLS certificate and simultaneously expose the OpenSquiggly instance w
 https support, add the following parameters to your helm install command:
 
 * tlsSecretName="secret-name-here"
-* exposeWith=nginx
+* exposeWith=nginx   <---- This is your ingress class name. See 
+  [here for details](/docs/k8s-guides/nginx).
 * dnsHostName="your.company.com"
 
 Example:
