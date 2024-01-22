@@ -9,7 +9,7 @@ description: How to install OpenSquiggly on Minikube
 
 Minikube is a lightweight distribution of Kubernetes that can be installed
 on your local desktop. This is an excellent option for evaluating OpenSquiggly
-with an environemtn that is both isolated and very easy to get running.
+with an environment that is both isolated and very easy to get running.
 
 ## Prerequistes
 
