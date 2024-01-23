@@ -22,7 +22,7 @@ with an environment that is both isolated and easy to get running.
 helm repo add opensquiggly https://opensquiggly.github.io/helm-charts
 ```
 
-## Option 1 : Use the Host Path CSI Driver and Install the Helm Chart
+## Option 1 : Use the Host Path CSI Driver
 
 We recommend you install the Host Path CSI driver before installing OpenSquiggly. This
 will make the ```hostpath.csi.k8s.io``` storage provisioner available in your cluster,
@@ -162,3 +162,13 @@ of the service. For example:
 ```bash
 192.168.49.2:30893
 ```
+
+## Video of Installing with Helm
+
+<iframe width="1024" height="795" src="https://www.youtube.com/embed/HLQmcbz8Vhg" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<div>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=HLQmcbz8Vhg" target="_blank">Open Video in YouTube</a></li>
+  <ul>
+</div>
