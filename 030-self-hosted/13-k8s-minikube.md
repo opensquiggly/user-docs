@@ -117,7 +117,7 @@ Aftwards, if you list your persistent volumes, notice the ReclaimPolicy is set t
 
 ```bash
 NAME              CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                       STORAGECLASS
-pvc-xxx-omitted   32Gi       RWO        --> Delete <--       Bound    default/opensquiggly2-pvc   standard
+pvc-xxx-omitted   30Gi       RWO        --> Delete <--       Bound    default/opensquiggly2-pvc   standard
 ```
 
 Now if you uninstall the Helm chart, your data will be deleted along with the installation and you'll have no
