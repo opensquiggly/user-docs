@@ -15,8 +15,12 @@ Kubernetes manager and an excellent option for evaluating OpenSquiggly.
 ## Install Prerequisites
 
 * Install Docker Desktop
-* Install the ```kubectl``` and ```helm``` command line tools using the instructions provider 
-  <a href="/docs/self-hosted/kubernetes/#installing-kubectl">here</a>.
+* Install the ```kubectl``` and ```helm``` tools using the instructions <a href="/docs/self-hosted/kubernetes/#installing-kubectl">here</a>.
+* Add the OpenSquiggly Helm chart repository to your list of Helm repositories:
+
+```bash
+helm repo add opensquiggly https://opensquiggly.github.io/helm-charts
+```
 
 ## Enable Kubernetes
 
