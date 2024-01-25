@@ -50,7 +50,7 @@ then:
     file and referencing it in your KUBECONFIG path.
 
 ### Video of Creating DOKS Cluster
-<iframe width="1024" height="804" src="https://www.loom.com/embed/442c3452d823410aaf3cfb1140fb0211" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe width="1024" height="804" src="https://www.youtube.com/embed/MXpJjtvC38E" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <hr>
 
