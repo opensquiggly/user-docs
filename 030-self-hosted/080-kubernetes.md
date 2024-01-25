@@ -1,7 +1,7 @@
 ---
-weight: 70
+weight: 80
 url: /docs/self-hosted/kubernetes
-order: 7
+order: 8
 Title: Installing on Kubernetes
 description: >
   Installing OpenSquiggly on the Kubernetes cloud orchestrator, instead of a virtual

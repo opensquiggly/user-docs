@@ -1,7 +1,7 @@
 ---
-weight: 115
+weight: 120
 url: /docs/self-hosted/k8s/docker-desktop
-order: 11
+order: 12
 title: "Kubernetes : Docker Desktop"
 description: How to install OpenSquiggly on Docker Desktop Kubernetes.
 ---

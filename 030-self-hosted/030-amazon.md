@@ -1,7 +1,7 @@
 ---
-weight: 20
+weight: 30
 url: /docs/self-hosted/vm/aws
-order: 2
+order: 3
 Title: "VM Install : Amazon"
 description: How to install OpenSquiggly on an Amazon AWS instance.
 ---

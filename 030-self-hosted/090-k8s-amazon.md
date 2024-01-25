@@ -1,7 +1,7 @@
 ---
-weight: 80
+weight: 90
 url: /docs/self-hosted/k8s/aws
-order: 8
+order: 9
 Title: "Kubernetes : Amazon"
 description: How to install OpenSquiggly on Amazon's Elastic Kubernetes Service (EKS).
 ---

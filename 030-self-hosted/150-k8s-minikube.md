@@ -1,7 +1,7 @@
 ---
-weight: 130
+weight: 150
 url: /docs/self-hosted/k8s/minikube
-order: 13
+order: 15
 title: "Kubernetes : Minikube"
 description: How to install OpenSquiggly on Minikube.
 ---

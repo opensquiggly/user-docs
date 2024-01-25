@@ -1,7 +1,7 @@
 ---
-weight: 100
+weight: 110
 url: /docs/self-hosted/k8s/digital-ocean
-order: 10
+order: 11
 Title: "Kubernetes : Digital Ocean"
 description: How to install OpenSquiggly on Digital Ocean Kubernetes Service (DOKS).
 ---

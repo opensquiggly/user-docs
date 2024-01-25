@@ -1,7 +1,7 @@
 ---
-weight: 120
+weight: 140
 url: /docs/self-hosted/k8s/linode
-order: 12
+order: 14
 title: "Kubernetes : Linode"
 description: How to install OpenSquiggly on Linode Kubernetes Engine (LKE).
 ---

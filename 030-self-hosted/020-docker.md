@@ -1,7 +1,7 @@
 ---
-weight: 15
+weight: 20
 url: /docs/self-hosted/docker
-order: 1
+order: 2
 title: Installing With Docker
 description: Information on using Docker to run OpenSquiggly
 ---
