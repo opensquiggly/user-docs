@@ -41,7 +41,7 @@ parameters.
   </tr>
   <tr>
     <td><code>cloudType=azure</code></td>
-    <td><code>cloudType=other,storageProvisioner=disk.csi.azure.com,azureSkuName=LRS_Premium</code></td>    
+    <td><code>cloudType=other,storageProvisioner=disk.csi.azure.com,diskSkuName=LRS_Premium</code></td>    
   </tr>
   <tr>
     <td><code>cloudType=digitalocean</code></td>
@@ -53,7 +53,7 @@ parameters.
   </tr>
   <tr>
     <td><code>cloudType=google</code></td>
-    <td><code>cloudType=other,storageProvisioner=pd.csi.storage.gke.io,googleDiskType=pd-ssd</code></td>    
+    <td><code>cloudType=other,storageProvisioner=pd.csi.storage.gke.io,diskType=pd-ssd</code></td>    
   </tr>
   <tr>
     <td><code>cloudType=linode</code></td>
@@ -166,11 +166,17 @@ metadata:
     kubernetes.io/cluster-service: "true"
   name: your-storageclass-name-here
 parameters:
-  skuname: # For Azure SSD, enter Premium_LRS
-  type: # For Google SSD, enter pd-ssd
+  skuname:   # For Azure SSD, enter Premium_LRS
+  type:      # For Google SSD, enter pd-ssd
 provisioner: storageprovisioner-name-here
-reclaimPolicy: Retain # Enter Retain or Delete
+reclaimPolicy: Retain    # Enter Retain or Delete (Retain recommended)
 volumeBindingMode: WaitForFirstConsumer
+```
+
+Save the above template to ```filename.yaml```, fill in the parameters as appropriate, and run the command:
+
+```bash
+kubectl apply -f filename.yaml
 ```
 
 We always recommend using a ```reclaimPolicy``` of ```Retain``` to prevent accidental deletion of your 
@@ -186,13 +192,16 @@ data in the event you uninstall the Helm chart.
     <th>Description</th>
   </tr>
   <tr>
+    <td colspan="4" style="background-color: darkgray; font-weight: bold;">Basic Settings</td>
+  </tr>
+  <tr>
     <td><code>cloudType</code></td>
-    <td>null</td>
+    <td>other</td>
     <td>
       aws<br>
       azure<br>
       digitalocean<br>
-      docker-desktop<br>
+      docker&#8209;desktop<br>
       google<br>
       linode<br>
       minikube<br>
@@ -210,54 +219,17 @@ data in the event you uninstall the Helm chart.
     <td>An integer, in gigabytes (example: 32 means 32Gb)</td>
     <td>
       The size of the persistent volume you wish to create, in gigabytes. The persistent
-      volume should be large enough to store your internally authored paged, cloned
+      volume should be large enough to store your internally authored pages, cloned
       repos (for your mount points), logs, and indexes. 
     </td>
   </tr>  
   <tr>
-    <td><code>useExistingPv</code></td>
-    <td>Empty</td>
-    <td>Any String</td>
-    <td>
-      If you don't want the Helm chart to create a persistent volume, and instead
-      use an existing persistent volume, enter the persistent volume name here    
-    </td>
-  </tr>
-  <tr>
-    <td><code>existingPvStorageClass</code></td>
-    <td></td>
-    <td></td>
-    <td>
-      When specifying useExistingPv, you can also specify the storage class that
-      the existing persistent volume uses. If you don't specify a storage class,
-      the chart will use the name specified in useExistingStorage class if it is
-      provided, or else the Helm release name suffixed with "-storageclass".    
-    </td>
+    <td colspan="4" style="background-color: darkgray; font-weight: bold;">Core Storage-Related Settings</td>
   </tr>  
-  <tr>
-    <td><code>useExistingPvc</code></td>
-    <td></td>
-    <td></td>
-    <td>
-      If you don't want the Helm chart to create a persistent volume claim, and instead
-      use an existing persistent volume claim, enter the PVC claim name here. This
-      option is only valid if useExistingPv is empty.    
-    </td>
-  </tr>  
-  <tr>
-    <td><code>useExistingStorageClass</code></td>
-    <td></td>
-    <td></td>
-    <td>
-      If you don't want the Helm chart to create a storage class, and instead use
-      an existing storage class, enter the storage class name in useExistingStorageClass.
-      This option is only valid if BOTH useExistingPv and useExistingPvc are empty.    
-    </td>
-  </tr> 
   <tr>
     <td><code>storageProvisioner</code></td>
-    <td></td>
-    <td></td>
+    <td>Empty</td>
+    <td>Any String</td>
     <td>
       If you want the storage class created by the Helm chart to use a specific storage
       provisioner supplied by your cloud provider, enter the name of the storage provisioner
@@ -269,9 +241,57 @@ data in the event you uninstall the Helm chart.
     </td>
   </tr> 
   <tr>
+    <td><code>useExistingPv</code></td>
+    <td>Empty</td>
+    <td>Any String</td>
+    <td>
+      If you don't want the Helm chart to create a persistent volume, and instead
+      use an existing persistent volume, enter the persistent volume name here    
+    </td>
+  </tr>
+  <tr>
+    <td><code>useExistingPvc</code></td>
+    <td>Empty</td>
+    <td>Any String</td>
+    <td>
+      If you don't want the Helm chart to create a persistent volume claim, and instead
+      use an existing persistent volume claim, enter the PVC claim name here. This
+      option is only valid if useExistingPv is empty.    
+    </td>
+  </tr>  
+  <tr>
+    <td><code>useExistingStorageClass</code></td>
+    <td>Empty</td>
+    <td>Any String</td>
+    <td>
+      If you don't want the Helm chart to create a storage class, and instead use
+      an existing storage class, enter the storage class name in useExistingStorageClass.
+      This option is only valid if BOTH useExistingPv and useExistingPvc are empty.    
+    </td>
+  </tr> 
+  <tr>
+    <td colspan="4" style="background-color: darkgray; font-weight: bold;">Advanced Storage-Related Settings</td>
+  </tr>    
+  <tr>
+    <td><code>diskSkuName</code></td>
+    <td>Empty</td>
+    <td>Any String</td>
+    <td>
+      <code>parameters:</code><br>
+      <code>&nbsp;&nbsp;skuname: value-here</code>
+    </td>
+  </tr>   
+  <tr>
+    <td><code>diskType</code></td>
+    <td>Empty</td>
+    <td>Any String</td>
+    <td>
+    </td>
+  </tr>    
+  <tr>
     <td><code>azureSkuName</code></td>
-    <td></td>
-    <td></td>
+    <td>LRS_Premium</td>
+    <td>Any String</td>
     <td>
       For Azure cloud type only, this variable supplies the Azure skuname you wish
       to use for your storage class and associated persistent volume claim. By default
@@ -280,14 +300,17 @@ data in the event you uninstall the Helm chart.
   </tr> 
   <tr>
     <td><code>googleDiskType</code></td>
-    <td></td>
-    <td></td>
+    <td>pd-ssd</td>
+    <td>Any String</td>
     <td>
       For Google cloud type only, this variable supplies the Google disk type you wish
       to use for your storage class and associated persistent volume claim. By default
       we select the highest performance option.    
     </td>
   </tr> 
+  <tr>
+    <td colspan="4" style="background-color: darkgray; font-weight: bold;">HTTP/HTTPS, Ingress, and DNS-Related Settings</td>
+  </tr>    
   <tr>
     <td><code>exposeWith</code></td>
     <td>LoadBalancer</td>
@@ -326,16 +349,18 @@ data in the event you uninstall the Helm chart.
     </td>
   </tr>   
   <tr>
-    <td><code>ingressClassName</code></td>
+    <td colspan="4" style="background-color: darkgray; font-weight: bold;">Application Configuration</td>
+  </tr>    
+  <tr>
+    <td><code>configSecretName</code></td>
     <td></td>
     <td>
     </td>
     <td>
-      Not sure this is used any more.
-      To use the Nginx ingress controller with a custom ingress class name that you've
-      previously created, enter the name of the ingress class here.       
+      The Kubernetes secret name containing configuration values for the OpenSquiggly
+      application.
     </td>
-  </tr>   
+  </tr> 
   <tr>
     <td><code>esMinHeapSize</code></td>
     <td></td>
@@ -356,15 +381,5 @@ data in the event you uninstall the Helm chart.
     <td>
       Specify the maximum ElasticSearch heap size.    
     </td>
-  </tr>   
-  <tr>
-    <td><code>configSecretName</code></td>
-    <td></td>
-    <td>
-    </td>
-    <td>
-      The Kubernetes secret name containing configuration values for the OpenSquiggly
-      application.
-    </td>
-  </tr>                                        
+  </tr>     
 </table>  
