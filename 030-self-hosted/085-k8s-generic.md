@@ -277,8 +277,17 @@ data in the event you uninstall the Helm chart.
     <td>Empty</td>
     <td>Any String</td>
     <td>
-      <code>parameters:</code><br>
-      <code>&nbsp;&nbsp;skuname: value-here</code>
+      If <code>cloudType=azure</code> then this value defaults to <code>LRU_Premium</code> unless otherwise
+      specified. For all other cloud types, it is empty by default. When present, it adds the <code>skuname</code>
+      parameter to the <code>parameters</code> section of the StorageClass manifest, as shown below.<br><br>
+      <div style="border: 1px solid black;">
+        <code>parameters:</code><br>
+        <code>&nbsp;&nbsp;skuname: value-here</code>
+      </div>
+      <br>
+      The purpose of this setting is to control the type of disk used, standard or premium SSD, on Azure.
+      Because OpenSquiggly benefits from high performance SSD disk performance, we recommend choosing it
+      whenever a cloud provider offers it.
     </td>
   </tr>   
   <tr>
@@ -286,27 +295,17 @@ data in the event you uninstall the Helm chart.
     <td>Empty</td>
     <td>Any String</td>
     <td>
+      If <code>cloudType=google</code> then this value defaults to <code>pd-ssd</code> unless otherwise
+      specified. For all other cloud types, it is empty by default. When present, it adds the <code>type</code>
+      parameter to the <code>parameters</code> section of the StorageClass manifest, as shown below.<br><br>
+      <div style="border: 1px solid black;">
+        <code>parameters:</code><br>
+        <code>&nbsp;&nbsp;type: value-here</code>
+      </div>
+      <br>
+      The purpose of this setting is to control the type of disk used, standard or premium SSD, on Google.
     </td>
   </tr>    
-  <tr>
-    <td><code>azureSkuName</code></td>
-    <td>LRS_Premium</td>
-    <td>Any String</td>
-    <td>
-      For Azure cloud type only, this variable supplies the Azure skuname you wish
-      to use for your storage class and associated persistent volume claim. By default
-      we select the highest performance option.    
-    </td>
-  </tr> 
-  <tr>
-    <td><code>googleDiskType</code></td>
-    <td>pd-ssd</td>
-    <td>Any String</td>
-    <td>
-      For Google cloud type only, this variable supplies the Google disk type you wish
-      to use for your storage class and associated persistent volume claim. By default
-      we select the highest performance option.    
-    </td>
   </tr> 
   <tr>
     <td colspan="4" style="background-color: darkgray; font-weight: bold;">HTTP/HTTPS, Ingress, and DNS-Related Settings</td>
@@ -321,31 +320,30 @@ data in the event you uninstall the Helm chart.
     </td>
     <td>
       How would you like the OpenSquiggly web service exposed to the outside world?
-      Enter 'LoadBalancer' to use a standard load balancer service, or 'nginx' to use
+      Enter 'LoadBalancer' to use a standard load balancer service, or the name of an
+      installed ingress controller such as 'nginx' to use
       an Nginx-powered ingress controller. Note that using an ingress controller may 
-      require additional configuration depending on your cloud provider.    
+      require additional configuration depending on your cloud provider. See documentation
+      <a href="/docs/k8s-guides/nginx/">here</a>.
     </td>
   </tr> 
   <tr>
     <td><code>dnsHostName</code></td>
-    <td></td>
-    <td>
-    </td>
+    <td>Empty</td>
+    <td>A Valid URL</td>
     <td>
       To use OpenSquiggly with a custom DNS name, enter the desired DNS name here.
-      This option is only valid when exposeWith is set to nginx.    
+      This option is only valid when exposeWith is set to an ingress class (e.g., nginx, etc.)  
     </td>
   </tr>     
   <tr>
     <td><code>tlsSecretName</code></td>
-    <td></td>
-    <td>
-    </td>
+    <td>Empty</td>
+    <td>Name of a Valid Secret</td>
     <td>
       To use OpenSquiggly with HTTPS, upload your TLS certificate as a Kubernetes secret,
       then enter the name of the secret that stores the certificate here. This option is
-      only valid when exposeWith is set to nginx. Consult the documentation at opensquiggly.com
-      for additional information on installing OpenSquiggly with HTTPS.    
+      only valid when exposeWith is set to an ingress class (e.g., nginx, etc.)   
     </td>
   </tr>   
   <tr>
@@ -353,19 +351,17 @@ data in the event you uninstall the Helm chart.
   </tr>    
   <tr>
     <td><code>configSecretName</code></td>
-    <td></td>
-    <td>
-    </td>
+    <td>Empty</td>
+    <td>Name of a Valid Secret</td>
     <td>
       The Kubernetes secret name containing configuration values for the OpenSquiggly
-      application.
+      application. See documentation <a href="/docs/k8s-guides/config/">here</a>.
     </td>
   </tr> 
   <tr>
     <td><code>esMinHeapSize</code></td>
-    <td></td>
-    <td>
-    </td>
+    <td>512m</td>
+    <td>A Valid Size String</td>
     <td>
       Specify the initial (mininum) ElasticSearch heap size, depending on the size of 
       the nodes in your cluster. Heap size should be no larger that 50% of available 
@@ -375,9 +371,8 @@ data in the event you uninstall the Helm chart.
   </tr>   
   <tr>
     <td><code>esMaxHeapSize</code></td>
-    <td></td>
-    <td>
-    </td>
+    <td>512m</td>
+    <td>A Valid Size String</td>
     <td>
       Specify the maximum ElasticSearch heap size.    
     </td>
