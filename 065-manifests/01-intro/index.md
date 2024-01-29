@@ -1,6 +1,7 @@
 ---
 weight: 10
 Order: 1
+url: /docs/manifests/importing
 Title: Introduction to Manifests
 description: How to use manifests to quickly add large numbers of mount points.
 ---

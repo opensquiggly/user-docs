@@ -1,6 +1,7 @@
 ---
 weight: 20
 Order: 2
+url: /docs/manifests/reference
 Title: Manifest File Reference
 description: Describes the format of the manifest file and the kinds of resources it can contain.
 ---
