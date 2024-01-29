@@ -277,7 +277,7 @@ data in the event you uninstall the Helm chart.
     <td>Empty</td>
     <td>Any String</td>
     <td>
-      If <code>cloudType=azure</code> then this value defaults to <code>LRU_Premium</code> unless otherwise
+      If <code>cloudType=azure</code> then this value defaults to <code>Premium_LRS</code> unless otherwise
       specified. For all other cloud types, it is empty by default. When present, it adds the <code>skuname</code>
       parameter to the <code>parameters</code> section of the StorageClass manifest, as shown below.<br><br>
       <div style="border: 1px solid black;">
