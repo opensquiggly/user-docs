@@ -28,12 +28,21 @@ The manifest file is itself delivered to OpenSquiggly via a mount point.
    within that repository.
 2. Mount the repository containing the manifest using the ordinary OpenSquiggly facitilites.<br><br>
    Example:<br>
-   ![Manifest Import](./ManifestImport1.png)
+   ![Manifest Import 1](./ManifestImport1.png)
    <br>
    Manifest repository can contain one or more manifests.<br><br>
-   ![Manifest Import](./ManifestImport2.png)
-
+   ![Manifest Import 2](./ManifestImport2.png)
+   <br><br>
+   Sample manifest file content:<br><br>
+   ![Manifest Import 3](./ManifestImport3.png)
 3. Your manifest should now be accessible to your OpenSquiggly instance and ready to import.
    Click the "Import Manifest" button in the Mount Points section of the User Options page.   
+   ![Manifest Import 4](./ManifestImport4.png)
+4. Select the Manifest Mount Point and enter the name of the manifest file you wish to import.
+   ![Manifest Import 5](./ManifestImport5.png)
+5. Click "Start Import" to start processing the manifest file. Processing will occur on the server
+   and run in the background. You can perform other actions as the import runs.   
+ 
+
 
    
