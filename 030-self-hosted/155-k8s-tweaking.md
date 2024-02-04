@@ -121,3 +121,25 @@ helm upgrade release-name opensquiggly/allinone --reuse-values --set start=true
 # Wait for pod to start
 kubectl get pods --watch
 ```
+
+## Revision History
+Each time you make any changes to a Helm release, a new revision is created with the
+updated settings. To view the list of revisions do:
+
+```bash
+helm history release-name
+```
+
+## Viewing Current Values
+To see the list of all Helm chart values for the current revision, do:
+
+```bash
+helm get values release-name --all
+```
+
+## Viewing Values for a Prior Revision
+To see the list of all Helm chart values for a past revision, do:
+
+```bash
+helm get values release-name --all --revision rev-number-here
+```
