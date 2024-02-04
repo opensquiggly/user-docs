@@ -127,19 +127,29 @@ Each time you make any changes to a Helm release, a new revision is created with
 updated settings. To view the list of revisions do:
 
 ```bash
-helm history release-name
+helm history release-name-here
 ```
 
 ## Viewing Current Values
 To see the list of all Helm chart values for the current revision, do:
 
 ```bash
-helm get values release-name --all
+helm get values release-name-here --all
 ```
 
 ## Viewing Values for a Prior Revision
 To see the list of all Helm chart values for a past revision, do:
 
 ```bash
-helm get values release-name --all --revision rev-number-here
+helm get values release-name-here --all --revision rev-number-here
 ```
+
+## Rollbacks
+To perform a rollback to a prior revision of the release, do:
+
+```bash
+helm rollback release-name-here rev-number-here
+```
+
+This creates a new revision with the settings equal to that of the specified
+prior revision.
