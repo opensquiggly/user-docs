@@ -71,7 +71,7 @@ It may take a few minutes for the pod to fully initialize.
 
 ## Resizing Volumes
 We've created our Helm charts to make it easy to resize your disk space after the installation. By
-doing it this way, you don't need to over allocate your disk space, and overpay for your hosting costs.
+doing it this way, you don't need to over allocate your disk space, and over pay for your hosting costs.
 
 We recommend starting with a modest disk size in the order of 10 - 50 GB. Later, after you've attached a 
 lot of mount points and run low on disk space, you can increase the disk size as-needed.
