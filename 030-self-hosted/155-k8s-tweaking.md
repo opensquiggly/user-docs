@@ -73,7 +73,7 @@ It may take a few minutes for the pod to fully initialize.
 We've created our Helm charts to make it easy to resize your disk space after the installation. By
 doing it this way, you don't need to over allocate your disk space, and overpay for your hosting costs.
 
-We recommend start with a modest disk size in the order of 10 - 50 GB. Later, after you've attached a 
+We recommend starting with a modest disk size in the order of 10 - 50 GB. Later, after you've attached a 
 lot of mount points and run low on disk space, you can increase the disk size as-needed.
 
 Note that you can never make the disk size smaller after you've increased it. This phenomenon also
@@ -83,7 +83,7 @@ resizing.
 ### If Your Cloud Provider Supports Online Resizing
 In many cases, depending on your cloud provider and the storage class you are using, your cluster
 may support online resizing of the disk space. This means you can resize the disk while keeping the
-OpenSquiggly running.
+OpenSquiggly instance running.
 
 In this case, increasing the disk space is a simple matter of changing the ```diskSize``` property
 with the command:

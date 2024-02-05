@@ -86,4 +86,15 @@ helm install opensquiggly-test1 opensquiggly/allinone --set \
 ```
 
 Assuming you followed the instructions for setting up ExternalDNS, OpenSquiggly should be installed and a
-DNS name opensquiggly-test1.yourcompany.com will be automatically created on your DNS server.
+DNS name opensquiggly-test1.yourcompany.com will be automatically created on your DNS server. If you aren't
+running ExternalDNS, you'll need to manually add the DNS name to your DNS name server.
+
+## Updating an Existing Instance
+If you've already installed OpenSquiggly as a basic installation without TLS and a custom domain name,
+and wish to update the instance while leaving all other settings unchanged, you can use the ```helm upgrade```
+command as follows:
+
+```bash
+helm upgrade opensquiggly-test1 opensquiggly/allinone --reuse-values --set \
+  exposeWith=nginx,tlsSecretName=mycertsecret,dnsHostName="opensquiggly-test1.yourcompany.com"
+```
