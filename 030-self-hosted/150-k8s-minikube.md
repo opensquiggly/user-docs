@@ -44,7 +44,7 @@ minikube addons enable csi-hostpath-driver
 Then, verify that the installation was successful with:
 
 ```bash
-kubectl get storagesclass
+kubectl get storageclasses
 ```
 
 The ```hostpath.csi.k8s.io``` storage provisioner should appear in the output list.
@@ -75,7 +75,7 @@ a minute.
 
 To check the storage class that the Helm chart created, run:
 ```bash
-kubectl get storageclass
+kubectl get storageclasses
 ```
 
 Sample Output:
